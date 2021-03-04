@@ -114,9 +114,9 @@ So Staticman is not perfect, but it's still the best option I found.
 
 Staticman is a Node.js app. So it cannot run on GitHub pages, but needs something else. It works like this:
 
-1) your app posts a new comment to Staticman
-2) Staticman authenticates with GitHub and either creates a PR or merges the comment to your repo right away
-3) when the comment has been merged, GitHub will re-create the HTML and the comment will be shown
+1. your app posts a new comment to Staticman
+2. Staticman authenticates with GitHub and either creates a PR or merges the comment to your repo right away
+3. when the comment has been merged, GitHub will re-create the HTML and the comment will be shown
 
 Unfortunately the [Staticman docs](https://staticman.net/docs/getting-started.html) are outdated and not very exhaustive. What took me a few days and [much help from Vincent Tam](https://github.com/eduardoboucas/staticman/issues/406) is to set up the authentication between Staticman and GitHub.
 
@@ -138,7 +138,7 @@ Go to your [account settings / Developer Settings on GitHub](https://github.com/
 
 | GitHub App Name | anything you want |
 | Homepage URL | the url of your web site |
-| Webhook URL | https://<heroku app name>.herokuapp.com/v1/webhook |
+| Webhook URL | https://\<heroku app name\>.herokuapp.com/v1/webhook |
 | Permissions: Content | Read & Write |
 | Permissions: Pull Requests | Read & Write |
 
