@@ -26,7 +26,6 @@ It is written in Ruby. So appart from Jekyll itself you also have to install Rub
 a bundler. MacOS has most of that stuff already installed (although it might be an old version), but
 my Windows PC doesn't. And I also didn't want to install all that locally.
 
-
 ## Docker to the rescue!
 
 If you have Windows 10 Professional or Enterprise, then you can install
@@ -96,6 +95,7 @@ They create the html for the comments and they also store all the data. And in t
 they also add ads to your site. These are too many reasons against using them.
 
 Luckily Google shows several alternatives.
+
 - [60devs](https://60devs.com/adding-comments-to-your-jekyll-blog.html) uses Just Comments,
 - [Savas Labs](https://savaslabs.com/2016/04/20/squabble-comments.html) create their own backend,
 - [Dave Compton](https://dc25.github.io/myBlog/2017/06/24/using-github-comments-in-a-jekyll-blog.html) uses GitHub comments
@@ -106,29 +106,71 @@ the users don't need to register and the comments will be published automaticall
 
 ## Staticman
 
-In the comments of Phil Haacks blog post I found the first mention of [Staticman](https://staticman.net/).
-Later on I also found [Michael Rose's blog](https://mademistakes.com/articles/jekyll-static-comments/)
-which uses Staticman. This is the same Michael Rose who also wrote the Minimal Mistakes theme and 
-when I digged more into that, I found that it was already built into the theme.
+Staticman fulfils all these requirements. The comments will be automatically committed to your GitHub repository. Each comment in its own file. So you can easily manage them.
 
-Unfortunately the Staticman docs are outdated. There are three versions of Staticman.
-V1 is deprecated. V2 works as documented in some other blog posts.
-V3 added support for GitLab, but it seems like it does not work anymore for GitHub.
-The way how they authenticate with GitHub with a [githubToken](https://staticman.net/docs/api#githubToken) does not work
-and it also looks like nobody got it working with [githubAppID and githubPrivateKey](https://github.com/eduardoboucas/staticman/issues/332#issuecomment-599149027).
+So the decision was made. It would be Staticman! But unfortunately Eduardo Bouças (the original developer) stopped working on it. Others took over, but Eduardo needs to review and confirm those changes before they can be merged. I saw PRs which were not reviewed in two years and then closed again because the contributor was not willing to solve merge conflicts anymore.
 
-So I just downgraded to v2, then everything works. But it is important to note, that the endpoint differs between v2 and v3.
+So Staticman is not perfect, but it's still the best option I found.
 
-V2:
+Staticman is a Node.js app. So it cannot run on GitHub pages, but needs something else. It works like this:
 
-    endpoint: "https://<your heroku appname>.herokuapp.com/v2/entry/"
+1) your app posts a new comment to Staticman
+2) Staticman authenticates with GitHub and either creates a PR or merges the comment to your repo right away
+3) when the comment has been merged, GitHub will re-create the HTML and the comment will be shown
 
-V3:
+Unfortunately the [Staticman docs](https://staticman.net/docs/getting-started.html) are outdated and not very exhaustive. What took me a few days and [much help from Vincent Tam](https://github.com/eduardoboucas/staticman/issues/406) is to set up the authentication between Staticman and GitHub.
 
-    endpoint: "https://<your heroku appname>.herokuapp.com/v3/entry/github/"
+The docs list three _options_ how this can be done, but they don't mention, that you **have** to use [option 1](https://staticman.net/docs/getting-started.html#option-1-authenticate-as-a-github-application) with Staticman v3 and [option 2](https://staticman.net/docs/getting-started.html#option-12-authenticate-to-github-using-a-personal-access-token-on-a-bot) with v2. When v3 was created, they broke the githubToken authentication and they never fixed it. [Option 3](option-3-authenticate-to-github-using-a-personal-access-token-on-your-main-account) is not recommended, but it should work with v2 too. V1 is deprecated and should not be used anymore.
 
-Especially the last two links below helped me getting Staticman running at last.
+What all have in common is that you need somewhere to host the Node.js app. Staticman recommends Heroku, but [Jan Hajek also managed with Azure](https://hajekj.net/2020/04/15/staticman-setup-in-app-service/).
 
+I went with Heroku. That's very easy. You just go to [heroku.com](https://www.heroku.com/) and sign up for a free account. Then click [this link](https://heroku.com/deploy?template=https://github.com/eduardoboucas/staticman/tree/master) to deploy a new application with Staticman as template.
+
+When this is finished, open the settings of your app and click Reveal Config Vars. Add the variable `RSA_PRIVATE_KEY`. For the value you need to create a RSA key. How you do that depends on your OS. It's either `ssh-keygen` or `openssl genrsa`. Copy the private key to the value of your config var. I also removed all newlines from the key value.
+
+Keep that browser tab open, we'll need to define some other vars later.
+
+### Staticman version 3
+
+Version 3 uses a GitHub App to authenticate. This has the advantage, that you can set strict permissions for what the App (and thus Staticman) can do.
+
+Go to your [account settings / Developer Settings on GitHub](https://github.com/settings/apps) and create a New GitHub App. Most of the values can remain the default. You just have to change:
+
+| GitHub App Name | anything you want |
+| Homepage URL | the url of your web site |
+| Webhook URL | https://<heroku app name>.herokuapp.com/v1/webhook |
+| Permissions: Content | Read & Write |
+| Permissions: Pull Requests | Read & Write |
+
+After the App was created first note the App Id at the top. Go back to your Heroku tab and add the var `GITHUB_APP_ID` with the 6-digit App id from your GitHub App.
+
+Back in your GitHub App settings scroll down and Generate a Private Key. This will download a .pem file. Open that file and copy its contents to the `GITHUB_PRIVATE_KEY` config var in Heroku.
+
+Then on GitHub select Install App in the navigation and install it to your GitHub Pages repository.
+
+In your _config.yml you need to specify these values:
+
+    comments:
+      provider: "staticman_v2"
+      staticman:
+        endpoint: "https://<your heroku appname>.herokuapp.com/v3/entry/github/"
+
+The API of versions 2 and 3 are very similar. So you can set the provider to `"staticman_v2"`. The `endpoint` matters.
+
+### Staticman version 2
+
+Version 2 needed a GitHub account to perform the necessary actions. This can either be your own account ([option 3](option-3-authenticate-to-github-using-a-personal-access-token-on-your-main-account)) or some newly created account which you can create solely for Staticman comments ([option 2](https://staticman.net/docs/getting-started.html#option-12-authenticate-to-github-using-a-personal-access-token-on-a-bot)). The former is not recommended because in this case Staticman can do everything in all your repositories.
+
+This is explained pretty good on [this blog](https://spinningnumbers.org/a/staticman-heroku.html#create-a-github-bot-account) and I won't repeat it here. You don't need to install the Heroku CLI. Just copy the personal access token of your new account and use the Heroku settings to add variable `GITHUB_TOKEN` there.
+
+In your _config.yml you need to specify these values:
+
+    comments:
+      provider               : "staticman_v2"
+      staticman:
+        endpoint: "https://<your heroku appname>.herokuapp.com/v2/entry/"
+
+There are many blogs about Staticman, but I didn't find anything which explains the differences between v2 and v3. So I listed that in more detail. If you have any more questions, then find some other links below.
 ## Links
 
 ### Getting Started
@@ -157,5 +199,8 @@ Especially the last two links below helped me getting Staticman running at last.
 - [Dave Compton - GitHub comments](https://dc25.github.io/myBlog/2017/06/24/using-github-comments-in-a-jekyll-blog.html)
 - [Michael Rose - uses Staticman](https://mademistakes.com/articles/jekyll-static-comments/)
 - [Staticman](https://staticman.net/)
-- [Staticman by Willy McAllister](https://spinningnumbers.org/a/staticman-heroku.html#try-it-out)
-- [Staticman by Travis Downs](https://travisdowns.github.io/blog/2020/02/05/now-with-comments.html)
+- [Willy McAllister about Staticman v2](https://spinningnumbers.org/a/staticman-heroku.html)
+- [Travis Downs about Staticman v2](https://travisdowns.github.io/blog/2020/02/05/now-with-comments.html)
+- [Vincent Tam about Staticman v3](https://github.com/pacollins/hugo-future-imperfect-slim/wiki/staticman.yml)
+- [Jan Hajek about Staticman v3](https://hajekj.net/2020/04/15/staticman-setup-in-app-service/)
+- [Staticman issues on GitHub](https://github.com/eduardoboucas/staticman/issues)
