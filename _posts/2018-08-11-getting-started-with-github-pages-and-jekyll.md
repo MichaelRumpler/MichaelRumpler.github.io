@@ -204,3 +204,4 @@ There are many blogs about Staticman, but I didn't find anything which explains 
 - [Vincent Tam about Staticman v3](https://github.com/pacollins/hugo-future-imperfect-slim/wiki/staticman.yml)
 - [Jan Hajek about Staticman v3](https://hajekj.net/2020/04/15/staticman-setup-in-app-service/)
 - [Staticman issues on GitHub](https://github.com/eduardoboucas/staticman/issues)
+- [Add support for threaded comments](https://mademistakes.com/articles/improving-jekyll-static-comments/#add-support-for-threaded-comments)
