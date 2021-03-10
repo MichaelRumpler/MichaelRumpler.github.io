@@ -119,7 +119,8 @@ footer:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/MichaelRumpler"
 
-
+after_footer_scripts:
+  - /assets/js/custom.js
 
 # Reading Files
 include:
