@@ -80,6 +80,9 @@ comments:
     # Mailgun domain (encrypted)
     domain: "ra2e11C9AVvN47v0HDHRSeNzSDB62NkZc0KhOKboAQN0p4gz5Y6OwPYrq2vVjgptRZZYQvDZ/g+nvovNBiedor7mA8XWnKV4auZRgphbLCwJHCiRGxNBSMRoxkyuQvaB/5zQXx9H0tSGMlwxIwuV+rsheWmlqs8SoTqzi/U2/BjolS/dOFL3dn2NjYtn6iDh9anTIvnZU8uxLXYwZQYIOGI6+tut6HWi1CVy9vATe/Z0TjsDoqFNsclByrIZGo+44U2E3bywr3Ouil6JgDRsqo4uB0lJw2+8pftR36J0RM7TTx+Zd44RrMi4jztl8Ol11Zdy3XwYZkoseo7mvYq8sA=="
 
+    # by default staticman can only send to the US mailGun API. The EU host has to be specified here. See https://github.com/eduardoboucas/staticman/pull/275/files
+    apiHost: "api.eu.mailgun.net"
+
   # (*) REQUIRED
   #
   # Destination path (directory) for the data files. Accepts placeholders.
