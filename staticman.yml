@@ -83,6 +83,9 @@ comments:
     # by default staticman can only send to the US mailGun API. The EU host has to be specified here. See https://github.com/eduardoboucas/staticman/pull/275/files
     apiHost: "api.eu.mailgun.net"
 
+    # emails will be sent from this address
+    fromAddress: "Michaels Blog <noreply@mg.mrumpler.at>"
+
   # (*) REQUIRED
   #
   # Destination path (directory) for the data files. Accepts placeholders.
