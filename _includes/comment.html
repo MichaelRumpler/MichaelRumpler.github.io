@@ -23,7 +23,7 @@
   {% unless include.is_last == false or page.comments_locked == true %}
   <div class="comment__reply">
     <a rel="nofollow" class="btn" href="#comment-{{ include.id }}" onclick="return addComment.moveForm('comment-{{ include.id }}', '{{ include.parent }}', 'respond', '{{ page.slug }}')">
-      {{ site.data.ui-text[site.locale].comment_form_reply_to | default: "Reply to" }} {{ include.name }}
+      {{ site.data.ui-text[site.locale].comment_form_reply_to | default: "&#x2BA9; Reply" }}
     </a>
   </div>
 {% endunless %}
