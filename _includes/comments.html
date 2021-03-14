@@ -22,16 +22,24 @@
                 {% endif %}
                 {{ site.data.ui-text[site.locale].comments_title | default: "Comments" }}
               </h4>
-              {% assign comments = site.data.comments[page.slug] | sort | where_exp: "comment", "comment[1].replying_to == ''" %}
+              {% assign comments = site.data.comments[page.slug] | sort | where_exp: "comment", "comment[1]._parent == comment[1]._id" %}
 
               {% for comment in comments %}
-                {% assign email = comment[1].email %}
-                {% assign name = comment[1].name %}
-                {% assign url = comment[1].url %}
-                {% assign date = comment[1].date %}
-                {% assign message = comment[1].message %}
-                {% assign replying_to = comment[1].replying_to | to_integer %}
-                {% include comment.html index=forloop.index replying_to=replying_to email=email name=name url=url date=date message=message %}
+                {% assign id          = comment[1]._id %}
+                {% assign parent      = comment[1]._parent %}
+                {% assign email       = comment[1].email %}
+                {% assign name        = comment[1].name %}
+                {% assign url         = comment[1].url %}
+                {% assign date        = comment[1].date %}
+                {% assign message     = comment[1].message %}
+
+                {% capture i %}{{ id }}{% endcapture %}
+                {% assign replies = site.data.comments[page.slug] | sort | where_exp: 'comment', 'comment[1]._id != i' | where_exp: 'comment', 'comment[1]._parent == i' %}
+                {% if replies.size > 0 %}
+                  {% assign is_last = false %}
+                {% endif %}
+          
+                {% include comment.html id=id parent=parent avatar=avatar email=email name=name url=url date=date message=message is_last=is_last replies=replies %}
               {% endfor %}
             {% endif %}
           </div>
@@ -66,9 +74,8 @@
               </div>
               <div class="form-group hidden" style="display: none;">
                 <input type="hidden" name="options[slug]" value="{{ page.slug }}">
-                <input type="hidden" id="comment-parent" name="fields[replying_to]" value="">
+                <input type="hidden" id="comment-parent" name="options[parent]" value="">
                 <input type="hidden" name="options[origin]" value="{{ page.url | absolute_url }}">
-                <input type="hidden" name="options[parent]" value="{{ page.url | absolute_url }}">
                 <input type="hidden" name="options[subscribe]" value="email">
                 <label for="comment-form-location">Not used. Leave blank if you are a human.</label>
                 <input type="text" id="comment-form-location" name="fields[hidden]" autocomplete="off"/>
