@@ -1,32 +1,37 @@
-<article id="comment-{{ include.id }}" class="js-comment comment {% unless include.parent == include.id %}child{% endunless %}" itemprop="comment" itemscope itemtype="https://schema.org/Comment">
-  <div class="comment__avatar-wrapper">
-    <img class="comment__avatar" src="https://www.gravatar.com/avatar/{{ include.email }}?d=mm&s=80" alt="{{ include.name }}">
+<article id="comment-{{ include.id }}" class="js-comment comment {% if include.name == site.author.name %}admin{% endif %} {% unless include.parent == include.id %}child{% endunless %}" itemprop="comment" itemscope itemtype="https://schema.org/Comment">
+  <div class="comment__avatar">
+    <img src="https://www.gravatar.com/avatar/{{ include.email }}?d=mm&s=60" alt="{{ include.name }}">
   </div>
-  <div class="comment__content-wrapper">
-    <h3 class="comment__author" itemprop="author" itemscope itemtype="https://schema.org/Person">
-      {% unless include.url == '' %}
-        <span itemprop="name"><a rel="external nofollow" itemprop="url" href="{{ include.url }}">{{ include.name }}</a></span>
-      {% else %}
-        <span itemprop="name">{{ include.name }}</span>
-      {% endunless %}
-    </h3>
-    <p class="comment__date">
+  <div class="comment__main">
+    <div class="comment__meta">
+      <strong itemprop="name" class="h-card">{{ include.name | strip_html }}</strong>
       {% if include.date %}
-        {% if include.id %}<a href="#comment-{{ include.id }}" itemprop="url" title="Permalink to this comment">{% endif %}
-        <time datetime="{{ include.date | date_to_xmlschema }}" itemprop="datePublished">{{ include.date | date: "%B %-d, %Y at %I:%M %p" }}</time>
-        {% if include.id %}</a>{% endif %}
+        <span class="comment_date">
+          {{ site.data.ui-text[site.locale].comment_form_at | default: "at" }}
+          <a href="#comment-{{ include.id }}" itemprop="url" title="{{ site.data.ui-text[site.locale].comment_form_permalink | default: "Permalink to this comment" }}">
+            <time datetime="{{ include.date | date_to_xmlschema }}" itemprop="datePublished">
+              <script>
+                {
+                  var date = new Date("{{ include.date | date: "%m/%d/%Y %H:%M:%S UTC" }}");
+                  document.write(date.toLocaleString());
+                }
+              </script>
+            </time>
+          </a>
+        </span>
       {% endif %}
-    </p>
-    <div itemprop="text">{{ include.message | markdownify }}</div>
+    </div>
+    <div class="comment__message" itemprop="text">
+      {{ include.message | markdownify }}
+    </div>
+    {% unless include.is_last == false or page.comments_locked == true %}
+    <div class="comment__reply">
+      <a rel="nofollow" href="#comment-{{ include.id }}" onclick="return addComment.moveForm('comment-{{ include.id }}', '{{ include.parent }}', 'respond', '{{ page.slug }}')">
+        {{ site.data.ui-text[site.locale].comment_form_reply_to | default: "&#x2BA9; Reply" }}
+      </a>
+    </div>
+    {% endunless %}
   </div>
-
-  {% unless include.is_last == false or page.comments_locked == true %}
-  <div class="comment__reply">
-    <a rel="nofollow" class="btn" href="#comment-{{ include.id }}" onclick="return addComment.moveForm('comment-{{ include.id }}', '{{ include.parent }}', 'respond', '{{ page.slug }}')">
-      {{ site.data.ui-text[site.locale].comment_form_reply_to | default: "&#x2BA9; Reply" }}
-    </a>
-  </div>
-{% endunless %}
 </article>
 
 {% for reply in include.replies %}

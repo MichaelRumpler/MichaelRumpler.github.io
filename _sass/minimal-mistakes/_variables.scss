@@ -2,11 +2,30 @@
    Variables
    ========================================================================== */
 
+/* Breakpoint widths */
+$sm-up: 576px;
+$md-up: 768px;
+$lg-up: 992px;
+$xl-up: 1200px;
+
+$sm-down: max-width 575.98px;
+$md-down: max-width 767.98px;
+$lg-down: max-width 991.98px;
+$xl-down: max-width 1199.98px;
+
+$xs-only: max-width 575.98px;
+$sm-only: 576px 767.98px;
+$md-only: 768px 991.98px;
+$lg-only: 992px 1199.98px;
+$xl-only: 1200px;
+
 /*
    Typography
    ========================================================================== */
 
 $doc-font-size: 16 !default;
+
+$line-height: 1.45;
 
 /* paragraph indention */
 $paragraph-indent: false !default; // true, false (default)
@@ -16,7 +35,7 @@ $indent-var: 1.3em !default;
 $serif: Georgia, Times, serif !default;
 $sans-serif: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
   "Helvetica Neue", "Lucida Grande", Arial, sans-serif !default;
-$monospace: Monaco, Consolas, "Lucida Console", monospace !default;
+$monospace: SFMono-Regular, Monaco, Consolas, "Lucida Console", Liberation Mono, Menlo, Courier, monospace !default;
 
 /* sans serif typefaces */
 $sans-serif-narrow: $sans-serif !default;
