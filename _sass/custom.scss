@@ -30,7 +30,6 @@
     margin-right: 10px;
     width: $avatar-size;
     height: $avatar-size;
-    background-color: #e3e3e3;
   
     @include breakpoint($md-up) {
       margin-right: 20px;
@@ -41,10 +40,13 @@
     img {
       width: $avatar-size;
       height: $avatar-size;
+      border-radius: 50%;
   
       @include breakpoint($md-up) {
         width: (2 * $avatar-size);
         height: (2 * $avatar-size);
+        padding: 5px;
+        border: 1px solid $border-color;
       }
     }
 }
