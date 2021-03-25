@@ -1,7 +1,8 @@
 ---
 title: Comments with Staticman
 date: 2021-03-19
-classes: wide
+toc: true
+toc_sticky: true
 ---
 
 The biggest problem of the blog by far were the comments. 

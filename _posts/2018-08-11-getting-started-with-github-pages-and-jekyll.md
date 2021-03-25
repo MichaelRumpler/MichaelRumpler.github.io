@@ -1,7 +1,8 @@
 ---
 title: Getting started with GitHub Pages and Jekyll
 date: 2018-08-11
-classes: wide
+toc: true
+toc_sticky: true
 ---
 
 [GitHub Pages](https://pages.github.com/) host your website for free. All you need to do is commit the
