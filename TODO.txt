@@ -1,0 +1,8 @@
+
+TODO Blog:
+- dynamic localization	(with data-translate attribute?)
+- dynamic local date	(all <time> elements - these already have the datetime attribute with a valid date string)
+
+Reiseblog:
+- migrate old data
+- maps in sidebar
