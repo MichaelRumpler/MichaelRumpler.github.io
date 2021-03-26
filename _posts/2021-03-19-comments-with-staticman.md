@@ -49,7 +49,7 @@ Keep that tab open, we will need to add more variables.
 
 Unfortunately the [Staticman docs](https://staticman.net/docs/getting-started.html) are outdated and not very exhaustive. What took me a few days and [much help from Vincent Tam](https://github.com/eduardoboucas/staticman/issues/406) is to set up the authentication between Staticman and GitHub.
 
-The docs list three _options_ how this can be done, but they don't mention, that you **have** to use [option 1](https://staticman.net/docs/getting-started.html#option-1-authenticate-as-a-github-application) with Staticman v3 and [option 2](https://staticman.net/docs/getting-started.html#option-12-authenticate-to-github-using-a-personal-access-token-on-a-bot) with v2. When v3 was created, they broke the githubToken authentication and it was never fixed. [Option 3](option-3-authenticate-to-github-using-a-personal-access-token-on-your-main-account) is not recommended, but it should work with v2 too. V1 is deprecated and should not be used anymore.
+The docs list three _options_ how this can be done, but they don't mention that you **have** to use [option 1](https://staticman.net/docs/getting-started.html#option-1-authenticate-as-a-github-application) with Staticman v3 and [option 2](https://staticman.net/docs/getting-started.html#option-12-authenticate-to-github-using-a-personal-access-token-on-a-bot) with v2. When v3 was created, they broke the githubToken authentication and it was never fixed. [Option 3](option-3-authenticate-to-github-using-a-personal-access-token-on-your-main-account) is not recommended, but it should work with v2 too. V1 is deprecated and should not be used anymore.
 
 ### Staticman version 3
 
@@ -116,7 +116,7 @@ reCaptcha:
 
 Mailgun can be used to notify your users of new comments via email. By default Minimal Mistakes notifies everybody who commented on the same blog post. I changed that in order that you can send an answer to a previous comment and only those receive emails who answered to the same comment.
 
-Registering for Mailgun is quite complicated, but their docs are very good. Just start [here](https://signup.mailgun.com/new/signup). You need to provide aour credit card info, but they will not charge anything. One problem I had (and nobody documented) was that you can choose whether you want to create your mail domain in the US or EU. As I am from Austria I chose EU and that didn't work. By default Staticman only works with the US domain and you can't change the region later.
+Registering for Mailgun is quite complicated, but their docs are very good. Just start [here](https://signup.mailgun.com/new/signup). You need to provide your credit card info, but they will not charge anything. One problem I had (and nobody documented) was that you can choose whether you want to create your mail domain in the US or EU. As I am from Austria I chose EU and that didn't work. By default Staticman only works with the US domain and you can't change the region later.
 
 There has been a [PR](https://github.com/eduardoboucas/staticman/pull/275/files) in 2019 which enabled you to configure the API URL, but it was not merged. Fortunately it was pretty easy to make those changes in my own fork so that I could configure the `apiHost` in my staticman.yml file.
 
@@ -128,16 +128,16 @@ I now have these settings for Mailgun in my staticman.yml:
     enabled: true
 
     # (!) ENCRYPTED
-    #
     # Mailgun API key
     apiKey: "yourEncryptedMailgunApiKey"
 
     # (!) ENCRYPTED
-    #
     # Mailgun domain (encrypted)
     domain: "yourEncryptedMailgunDomain"
 
-    # by default staticman can only send to the US mailGun API. The EU host has to be specified here. See https://github.com/eduardoboucas/staticman/pull/275/files
+    # By default staticman can only send to the US mailGun API.
+    # With the PR below, it can also use the EU domain.
+    # See https://github.com/eduardoboucas/staticman/pull/275/files
     apiHost: "api.eu.mailgun.net"
 
     # emails will be sent from this address
@@ -150,6 +150,44 @@ I want to be able to reply to previous comments. By default, this is not possibl
 
 After I did that, my comments all had an id which I could link to. As I didn't like the standard email Staticman sends I changed that in my Staticman fork in [lib/Notification.js](https://github.com/MichaelRumpler/staticman/blob/master/lib/Notification.js#L14-L19). But unfortunately that function did not get the id of the new comment, so I also had to provide that in [lib/Staticman.js](https://github.com/MichaelRumpler/staticman/blob/master/lib/Staticman.js#L508).
 My email notifications now don't contain a strange greeting ("Dear human") anymore. Instead they list the name of the person who sent the new comment, the message and a direct link to the new comment.
+
+## Other changes
+
+A few days after my blog went online (and I didn't promote it in any way) I already had my first spam message. Apparently reCAPTCHA is not enough. I found [this](https://spinningnumbers.org/a/staticman-heroku.html#appendix--fighting-spam) about spam protection.
+
+It basically changes the submit button to a normal button and disables it. On the reCAPTCHA add a data-callback attribute - both in comments.html:
+
+~~~html
+  {% if site.reCaptcha.siteKey %}
+    <div class="form-group">
+      <div class="g-recaptcha"
+           data-sitekey="{{ site.reCaptcha.siteKey }}"
+           data-callback="verifyCaptcha"></div>
+    </div>
+  {% endif %}
+  <div class="form-group">
+    <button type="button" disabled="disabled" id="comment-form-submit" ...
+  </div>
+~~~
+
+When the page loads, the button will be disabled and a spam bot won't be able to submit. Only when the reCAPTCHA is checked, it executes the verifyCaptcha function. Add it to some .js file:
+
+~~~js
+var verifyCaptcha = function(response) {
+    if(response.length == 0) {
+    } else {
+        var _el=$('#comment-form-submit');
+        _el.removeAttr("disabled");
+        _el.addClass('button-primary dark-blue-bg');
+        _el.attr('aria-disabled', 'false');
+        _el.attr('type', 'submit');
+    }
+};
+~~~
+
+This changes the submit button back to what it should be.
+
+I'll see if I still get some spams. If Yes, then I have to look into Akismet too. This also does spam prevention, but as I understood it, it is still in preview in Staticman and does not really work. [PRs](https://github.com/eduardoboucas/staticman/pull/372) fixing it have not been merged.
 
 ## Links
 
