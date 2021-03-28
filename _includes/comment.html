@@ -10,12 +10,7 @@
           {{ site.data.ui-text[site.locale].comment_form_at | default: "at" }}
           <a href="#comment-{{ include.id }}" itemprop="url" title="{{ site.data.ui-text[site.locale].comment_form_permalink | default: "Permalink to this comment" }}">
             <time datetime="{{ include.date | date_to_xmlschema }}" itemprop="datePublished">
-              <script>
-                {
-                  var date = new Date("{{ include.date | date: "%m/%d/%Y %H:%M:%S UTC" }}");
-                  document.write(date.toLocaleString());
-                }
-              </script>
+              {{ include.date | date: "%m/%d/%Y %H:%M:%S UTC" }}
             </time>
           </a>
         </span>

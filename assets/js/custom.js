@@ -107,3 +107,21 @@ var verifyCaptcha = function(response) {
       _el.attr('type', 'submit');
   }
 };
+
+$(document).ready(function() {
+  $('time').each(function() {
+    var dateStr = $(this).attr('datetime');
+    if (dateStr)
+    {
+      if(dateStr.indexOf("T") == -1 || dateStr.indexOf("T00:00:00") > -1)
+      {
+        // dateStr has no time part, use and print date only, ignore timezone
+        var b = dateStr.split(/\D/);
+        var date = new Date(b[0], b[1]-1, b[2]);
+        $(this).text(date.toLocaleDateString());
+      }
+      else
+        $(this).text(new Date(dateStr).toLocaleString());
+    }
+  });
+});
