@@ -7,7 +7,7 @@
       <strong itemprop="name" class="h-card">{{ include.name | strip_html }}</strong>
       {% if include.date %}
         <span class="comment_date">
-          {{ site.data.ui-text[site.locale].comment_form_at | default: "at" }}
+          <span data-translate="comment_form_at">{{ site.data.ui-text[site.locale].comment_form_at | default: "at" }}</span>
           <a href="#comment-{{ include.id }}" itemprop="url" title="{{ site.data.ui-text[site.locale].comment_form_permalink | default: "Permalink to this comment" }}">
             <time datetime="{{ include.date | date_to_xmlschema }}" itemprop="datePublished">
               {{ include.date | date: "%m/%d/%Y %H:%M:%S UTC" }}
@@ -21,7 +21,7 @@
     </div>
     {% unless include.is_last == false or page.comments_locked == true %}
     <div class="comment__reply">
-      <a rel="nofollow" href="#comment-{{ include.id }}" onclick="return addComment.moveForm('comment-{{ include.id }}', '{{ include.parent }}', 'respond', '{{ page.slug }}')">
+      <a rel="nofollow" href="#comment-{{ include.id }}" onclick="return addComment.moveForm('comment-{{ include.id }}', '{{ include.parent }}', 'respond', '{{ page.slug }}')" data-translate="comment_form_reply_to">
         {{ site.data.ui-text[site.locale].comment_form_reply_to | default: "&#x2BA9; Reply" }}
       </a>
     </div>
