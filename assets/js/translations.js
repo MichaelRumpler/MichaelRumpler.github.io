@@ -3,11 +3,12 @@ layout: empty
 ---
 
 var translations = {
-    locale: navigator.language.substr(0, 2),
+    locale: navigator.language,
+    language: navigator.language.substr(0, 2),
     getTranslation: function(key)
     {
-        if(this[this.locale] && this[this.locale][key])
-            return this[this.locale][key];
+        if(this[this.language] && this[this.language][key])
+            return this[this.language][key];
         if(this["en"] && this["en"][key])
             return this["en"][key];
         return null;
@@ -21,12 +22,34 @@ var translations = {
                 $(this).text(t);
         });
     },
+    setDateFormat: function()
+    {
+        var dateFormat = new Intl.DateTimeFormat(this.locale, { year: 'numeric', month: '2-digit', day: '2-digit'});
+        var dateTimeFormat = new Intl.DateTimeFormat(this.locale, { year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit'});
+      
+        $('time').each(function() {
+          var dateStr = $(this).attr('datetime');
+          if (dateStr)
+          {
+            var str;
+            var date = new Date(dateStr);
+            if(dateStr.indexOf("T") == -1 || dateStr.indexOf("T00:00:00") > -1)
+              str = dateFormat.format(date);
+            else
+              str = dateTimeFormat.format(date);
+            $(this).text(str);
+          }
+        });
+    },
     setLocale: function(newLocale)
     {
-        if(this[newLocale])
+        var newLang = newLocale.substr(0, 2);
+        if(this[newLang])
         {
             this.locale = newLocale;
+            this.language = newLang;
             this.translateAll();
+            this.setDateFormat();
         }
     },
 
@@ -38,4 +61,7 @@ var translations = {
 {% endfor %}
 };
 
-$(document).ready(translations.translateAll);
+$(document).ready(function() {
+    translations.translateAll();
+    translations.setDateFormat();
+});
