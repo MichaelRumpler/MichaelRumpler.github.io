@@ -91,11 +91,17 @@ In your _config.yml you need to specify these values:
       staticman:
         endpoint: "https://<your heroku appname>.herokuapp.com/v2/entry/"
 
-## reCAPTCHA
+## Spam protection
 
-Next you need reCAPTCHA. Go ahead and [register here](https://www.google.com/recaptcha/admin). I did this in 2018 and registered for v2. TBH I don't know if v3 or Enterprise also work. I didn't try myself and couldn't find anybody confirming that. However, after you registered you get a _Site key_ and a _Secret_. The Secret must be [encrypted](https://staticman.net/docs/encryption). 
+Once your blog is found by google it is only a question of days until you'll get your first spam comment. Akismet has a good [description about spam comments](https://docs.akismet.com/general/spam-facts/).
 
-Both have to inserted in the staticman.yml
+### reCAPTCHA
+
+The easiest part to introduce is reCAPTCHA. It is a service by Google, built in in Minimal Mistakes and everybody knows it from tons of other sites.
+
+Go ahead and [register here](https://www.google.com/recaptcha/admin). I did this in 2018 and registered for v2. TBH I don't know if v3 or Enterprise also work. I didn't try myself and couldn't find anybody confirming that. However, after you registered you get a _Site key_ and a _Secret_. The Secret must be [encrypted](https://staticman.net/docs/encryption). 
+
+Both have to be inserted in the staticman.yml
 
 ~~~yml
   reCaptcha:
@@ -111,6 +117,75 @@ reCaptcha:
   siteKey                : "yourSitekey"
   secret                 : "yourEncryptedSecret"
 ~~~
+
+### Disable the submit button
+
+Unfortunately reCAPTCHA alone is not enough. After a few days I got my first spam message.
+
+I found [this](https://spinningnumbers.org/a/staticman-heroku.html#appendix--fighting-spam) about spam protection. It basically changes the submit button to a normal button and disables it. Once the reCAPTCHA has been checked, it updates the submit button.
+
+In comments.html add a data-callback attribute to the reCAPTCHA and disable the submit button:
+
+~~~html
+  {% if site.reCaptcha.siteKey %}
+    <div class="form-group">
+      <div class="g-recaptcha"
+           data-sitekey="{{ site.reCaptcha.siteKey }}"
+           data-callback="verifyCaptcha"></div>
+    </div>
+  {% endif %}
+  <div class="form-group">
+    <button type="button" disabled="disabled" id="comment-form-submit" ...
+  </div>
+~~~
+
+When the reCAPTCHA is checked, it executes the verifyCaptcha function. Add it to some .js file:
+
+~~~js
+var verifyCaptcha = function(response) {
+    if(response.length == 0) {
+    } else {
+        var _el=$('#comment-form-submit');
+        _el.removeAttr("disabled");
+        _el.addClass('button-primary dark-blue-bg');
+        _el.attr('aria-disabled', 'false');
+        _el.attr('type', 'submit');
+    }
+};
+~~~
+
+This changes the submit button back to what it should be.
+
+I'll see if I still get some spams. If Yes, then I have to look into Akismet too. This also does spam prevention, but as I understood it, it is still in preview in Staticman and does not really work. [PRs](https://github.com/eduardoboucas/staticman/pull/372) fixing it have not been merged.
+
+### Akismet
+
+As you might have guessed it was still not enough. It took a few days, but the spam comments came again.
+
+[Akismet](https://www.akismet.com) is another spam prevention service. It is mainly for WordPress and it is the default there. First I read that it was not officially supported by Staticman, but when I tried, it worked at once. It is another external service though and of course it is one more moving part which could go wrong.
+
+Akismet tries hard to get you to pay for their service. The free option is very good hidden. You have to [sign up for the personal plan](https://akismet.com/signup/#personal) to "pay what you want" and then move the slider "What is Akismet worth to you?" to the left. But this is only for personal websites without ads or any other stuff which brings you some income. If you have those, you'll need to pay.
+
+Unfortunately you also need a wordpress.com account. Another site where you have to register.
+
+On the Staticman side, configuring Akismet is very easy. You just need to uncomment the akismet section in your staticman.yml.
+
+~~~yml
+  # Akismet spam detection.
+  akismet:
+    enabled: true
+    author: "name"
+    authorEmail: "email"
+  #   authorUrl: "url"    I don't use that
+    content: "message"
+    type: "comment"
+~~~
+
+Then in Heroku you need to define two Config Vars: `AKISMET_API_KEY` and `AKISMET_SITE`. The `AKISMET_SITE` is the url of your blog - the one you entered when registering with Akismet. And the `AKISMET_API_KEY` will be sent to you via email.
+
+And that's actually it. You can test if Akismet works by entereing the data described in the [Akismet docs](https://docs.akismet.com/getting-started/confirm/).
+
+And the good news is: after activating Akismet, I really didn't get any spam comments anymore.
 
 ## Mailgun
 
@@ -148,46 +223,12 @@ I now have these settings for Mailgun in my staticman.yml:
 
 I want to be able to reply to previous comments. By default, this is not possible in Minimal Mistakes. You can only send comments to the whole blog post. But [Michael Rose](https://mademistakes.com/articles/improving-jekyll-static-comments/) did this for his own blog and [Gabriel Luci](https://www.gabescode.com/staticman/2019/01/04/staticman-comments-for-jekyll.html#per-thread-notifications) built on that. Although that is quite a lot of manual work, their description is very good. So I won't repeat it here.
 
+## Other changes
+
 After I did that, my comments all had an id which I could link to. As I didn't like the standard email Staticman sends I changed that in my Staticman fork in [lib/Notification.js](https://github.com/MichaelRumpler/staticman/blob/master/lib/Notification.js#L14-L19). But unfortunately that function did not get the id of the new comment, so I also had to provide that in [lib/Staticman.js](https://github.com/MichaelRumpler/staticman/blob/master/lib/Staticman.js#L508).
 My email notifications now don't contain a strange greeting ("Dear human") anymore. Instead they list the name of the person who sent the new comment, the message and a direct link to the new comment.
 
-## Other changes
-
-A few days after my blog went online (and I didn't promote it in any way) I already had my first spam message. Apparently reCAPTCHA is not enough. I found [this](https://spinningnumbers.org/a/staticman-heroku.html#appendix--fighting-spam) about spam protection.
-
-It basically changes the submit button to a normal button and disables it. On the reCAPTCHA add a data-callback attribute - both in comments.html:
-
-~~~html
-  {% if site.reCaptcha.siteKey %}
-    <div class="form-group">
-      <div class="g-recaptcha"
-           data-sitekey="{{ site.reCaptcha.siteKey }}"
-           data-callback="verifyCaptcha"></div>
-    </div>
-  {% endif %}
-  <div class="form-group">
-    <button type="button" disabled="disabled" id="comment-form-submit" ...
-  </div>
-~~~
-
-When the page loads, the button will be disabled and a spam bot won't be able to submit. Only when the reCAPTCHA is checked, it executes the verifyCaptcha function. Add it to some .js file:
-
-~~~js
-var verifyCaptcha = function(response) {
-    if(response.length == 0) {
-    } else {
-        var _el=$('#comment-form-submit');
-        _el.removeAttr("disabled");
-        _el.addClass('button-primary dark-blue-bg');
-        _el.attr('aria-disabled', 'false');
-        _el.attr('type', 'submit');
-    }
-};
-~~~
-
-This changes the submit button back to what it should be.
-
-I'll see if I still get some spams. If Yes, then I have to look into Akismet too. This also does spam prevention, but as I understood it, it is still in preview in Staticman and does not really work. [PRs](https://github.com/eduardoboucas/staticman/pull/372) fixing it have not been merged.
+The id in the comments also has the advantage that you can delete some comments just by deleting the file. References to other comments will still be correct.
 
 ## Links
 
