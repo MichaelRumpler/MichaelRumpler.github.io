@@ -1,0 +1,14 @@
+_id: 04578b00-f388-11eb-87d4-391e0582bb72
+_parent: 560665a0-f35d-11eb-ad21-aba37136ac90
+message: >-
+  I tried to configure in my GitHub pages for 'Staticman version 3', as you
+  described, I deployed the app in Heroku, created GitHub app as you said in the
+  description. Added staticman endpoint in  _config.yml. I opened the app from
+  heroku and got the response 'Hello from Staticman version 3.0.0!'. When I try
+  to add comments on page, it shows the error 'Sorry, there was an error with
+  your submission. Please make sure all required fields have been completed and
+  try again'. Already all fields are filled up.
+name: Mahesh Kumar Yadav
+email: 838522d828bf064fd695215723d60294
+hidden: ''
+date: '2021-08-02T11:51:48.472Z'
