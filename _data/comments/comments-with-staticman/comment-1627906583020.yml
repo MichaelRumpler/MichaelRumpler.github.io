@@ -1,0 +1,13 @@
+_id: 72a2aec0-f38b-11eb-87d4-391e0582bb72
+_parent: 560665a0-f35d-11eb-ad21-aba37136ac90
+message: >-
+  The required fields can be found in staticman.yml. It is called
+  "requiredFields". Check if it contains something which you don't have in your
+  comment form (_includes/comments.html). If your requiredFields contain e.g.
+  "url", then your comments form must also contain a respective input field with
+  name="fields[url]". You can also check in the heroku log or in the browsers
+  debugger what parameters have really been submitted.
+name: Michael Rumpler
+email: 9c6157b38ba5f59cf1df52d44b1bce4f
+hidden: ''
+date: '2021-08-02T12:16:23.018Z'
