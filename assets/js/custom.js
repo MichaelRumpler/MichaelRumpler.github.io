@@ -107,15 +107,15 @@ var verifyCaptcha = function(response) {
       _el.attr('type', 'submit');
 
       if(typeof(Storage) != "undefined") {
-        localStorage.fullname = $("#comment-form-name").value();
-        localStorage.email = $("#comment-form-email").value();
+        localStorage.fullname = $("#comment-form-name").val();
+        localStorage.email = $("#comment-form-email").val();
       }
   }
 };
 
 $(function() {
   if(typeof(Storage) != "undefined") {
-    $("#comment-form-name").value(localStorage.fullname);
-    $("#comment-form-email").value(localStorage.email);
+    $("#comment-form-name").val(localStorage.fullname);
+    $("#comment-form-email").val(localStorage.email);
   }
 });
