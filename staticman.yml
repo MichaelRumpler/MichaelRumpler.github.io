@@ -99,6 +99,8 @@ comments:
   # the name of the field and values are possible transformation types.
   transforms:
     email: md5
+    name: antixss
+    message: antixss
 
   # reCaptcha
   # Register your domain at https://www.google.com/recaptcha/ and choose reCAPTCHA V2
