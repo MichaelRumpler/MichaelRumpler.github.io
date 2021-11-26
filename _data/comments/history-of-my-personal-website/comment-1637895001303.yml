@@ -1,6 +1,6 @@
 _id: 8c56a460-4e63-11ec-ad4b-7f9d6c95844d
 _parent: 8c56a460-4e63-11ec-ad4b-7f9d6c95844d
-message: "<script>xssTest(123)</script>\r\n<script>alert(document.cookie)</script>"
+message: "&lt;script&gt;xssTest(123)&lt;/script&gt;\r\n&lt;script&gt;alert(document.cookie)&lt;/script&gt;"
 name: hacker
 email: 7757d6a5bdae6c39a242d6e981a58a0d
 hidden: ''
