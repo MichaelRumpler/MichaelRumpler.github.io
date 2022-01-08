@@ -1,0 +1,7 @@
+_id: 8d83c110-7041-11ec-ab34-77095d32b7e3
+_parent: 8d83c110-7041-11ec-ab34-77095d32b7e3
+message: "Hello, I was wondering if you have any advice on getting akismet working.\r\n\r\nI created an akismet personal account and have an api key.\r\n\r\nI have my own instance of staticman, at \"https://<my-herokuappname>.herokuapp.com\".\r\n\r\nNow, according to https://github.com/eduardoboucas/staticman/issues/83, the AKISMET_SITE variable should be the same as where staticman is hosted, thus \"https://<my-herokuappname>.herokuapp.com\".\r\n\r\nElsewhere I see that AKISMET_SITE variable is just a personal domain, \"mydomain.com\".\r\n\r\nFor you is it your staticman heroku url, or is it your personal domain? I cannot get it working with either, trying to use the recommended akismet spam comment.\r\n\r\nThanks for the blog post."
+name: kai
+email: b916850b417978615e6910e228f59542
+hidden: ''
+date: '2022-01-08T05:12:19.977Z'
