@@ -1,0 +1,18 @@
+_id: 98ba6570-b290-11ec-9e57-2bc54ccb66a4
+_parent: 98ba6570-b290-11ec-9e57-2bc54ccb66a4
+message: >-
+  Hello, I have been trying to figure this out, but am running into issues. I
+  have created a GitHub app and have my own instance of Staticman on Heroku.
+  When I go to the root URL of my Heroko Staticman, I get the “Hello from
+  Staticman version 3.0.0!” message. In my site configs, when I use the v3/entry
+  it doesn’t work. When I change it to v2/entry in my site config, it does work.
+  It seems like my Github app and Heroku are communicating as expected since I
+  get a pull request with v2/entry, but I do not know why v3 doesn’t work. I
+  feel like I am missing something obvious, but cannot figure it out and various
+  documentation on Staticman is older than the Github App configuration, so it’s
+  hard to put the pieces together sometimes. I built my Heroku instance from the
+  Master branch of the Staticman repository, if that is helpful.
+name: Ben
+email: 27cd461b821a9c54b3eb720e88298466
+hidden: ''
+date: '2022-04-02T14:24:25.626Z'
