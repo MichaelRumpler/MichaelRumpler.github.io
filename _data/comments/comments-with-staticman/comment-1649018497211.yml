@@ -1,0 +1,11 @@
+_id: 74a87dd0-b38e-11ec-ae39-37a42f88cdb5
+_parent: 98ba6570-b290-11ec-9e57-2bc54ccb66a4
+message: >-
+  After more testing, looking at source code, and thinking, it seems I needed to
+  add "/GitHub" to the end of the "v3/entry" API url to cause it to work. So
+  "v2/entry" works and now "v3/entry/github" also works. I don't recall seeing
+  that documented any where.
+name: Ben
+email: 27cd461b821a9c54b3eb720e88298466
+hidden: ''
+date: '2022-04-03T20:41:37.206Z'
