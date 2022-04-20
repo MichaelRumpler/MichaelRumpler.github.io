@@ -1,0 +1,10 @@
+_id: 6be9da00-c0ee-11ec-9507-378d2c0205d3
+_parent: 98ba6570-b290-11ec-9e57-2bc54ccb66a4
+message: >-
+  I was able to get v3 up and running and comments result in a pull request in
+  GitHub, but when I either merge or close the pull request, my Heroku app
+  crashes. Do you know what would cause this?
+name: Ben
+email: 27cd461b821a9c54b3eb720e88298466
+hidden: ''
+date: '2022-04-20T21:11:19.387Z'
