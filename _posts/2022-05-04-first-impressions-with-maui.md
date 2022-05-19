@@ -31,11 +31,11 @@ For WinUI3 I basically took the UWP code and changed some namespaces. On UWP I s
 
 For MR.Gestures I implemented my own version of each and every `Layout`, `View` and the `ContentPage`. For every single element I needed renderers for every platform to inject my gesture handling. Now in MAUI those renderers have been replaced with handlers. That's quite a biggie for me. Luckily the architecture of MAUI seems to be really solid. So I just needed to find out how to glue everything together. Another advantage of waiting so long: there are a few people out there who already did that and wrote about it. The best info I could find was [in this repo by Javier Suárez](https://github.com/jsuarezruiz/xamarin-forms-to-net-maui/tree/main/Handlers). The essential MAUI developers are also all on Twitter and they respond to questions there. If you only have a small question, this is much faster than opening a GitHub issue.
 
-I summed all that up and wrote another blog post about it. You can find it in the next post.
-
 ## MR.Gestures
 
 I'm at a stage where I know how to migrate MR.Gestures, I already wrote the most important handlers, but I'm not finished with all the handlers and I didn't test everything. As soon as I have handlers for everything, I'll release a alpha version so that you all can have a look. Expect a new version in the next couple of days.
+
+Edit: The new version is out. I wrote a blog post about what I had to do which was published on the Microsoft Blog: [Migrating MR.Gestures from Xamarin.Forms to .NET MAUI](https://devblogs.microsoft.com/xamarin/migrating-mrgestures-to-dotnet-maui/).
 
 ## Problems still in RC2
 
@@ -47,6 +47,5 @@ Here is a list of problems I stumbled upon during my work on MR.Gestures and the
 - Deploy to iOS sometimes does not work, F5 starts debugging the old version of the app
 - RelativeLayout and Frame are still not implemented in MAUI
 - Label in iOS is only one line high
-- On Windows a Label in a Grid is only as high as the content of the Label. It does not span the whole Grid cell.
-- A FlexLayout in a StackLayout seems to have 0 height. A following Label is rendered over the FlexLayout on Windows.
+- A FlexLayout in a StackLayout seems to have 0 height. A following Label is rendered over the FlexLayout on Windows - better in RC3, but the height is still too low
 - Handlers are not cleaned up - there is a method DisconnectHandler, but [it is never called](https://github.com/dotnet/maui/issues/3604).
