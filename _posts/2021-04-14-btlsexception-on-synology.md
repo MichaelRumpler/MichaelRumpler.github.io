@@ -4,6 +4,29 @@ date: 2021-04-14
 classes: wide
 ---
 
+## Update from April 2023:
+
+Two years later there is a Mono update with these release notes:
+
+{% capture notice-text %}
+Version 6.12.0.182-20
+1. Update mono to version 6.12.0.182.
+2. Fix BTLS for aarch64 on DSM 6
+3. Add script to update ca certificates.
+{% endcapture %}
+
+<div class="notice--info">
+  {{ notice-text | markdownify }}
+</div>
+
+This is exactly what I was waiting for. And sure enough after installing this version Sonarr and Radarr still work and the warning about the outdated Mono is gone.
+
+This is the old blog post from April 2021:
+
+---
+
+### MonoBtlsException: POINT_IS_NOT_ON_CURVE
+
 I run Sonarr on my Synology NAS. This worked quite well until about three months ago. All of a sudden Sonarr couldn't check the indexers anymore. After some search I found this exception in the logs (System / Log Files):
 
 ~~~
@@ -35,7 +58,8 @@ So I installed an old Mono version with these steps:
 
 That version 5.8.0.108 is from 2018, but everything seems to work again. Maybe a newer version also works, but I didn’t want to check each and every version inbetween.
 
----
+
+### MonoBtlsException: CERTIFICATE_VERIFY_FAILED
 
 A few days ago it stopped working again. The exception was very similar, but not exactly the same:
 
