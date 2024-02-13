@@ -1,0 +1,15 @@
+---
+title: Weiterreise buchen und Souvenirs kaufen
+author: Michael
+date: 2011-09-27
+comments_locked: true
+classes: wide
+categories:
+  - Reiseblog
+  - NZ/AU/TH-2011
+  - Australien
+tags:
+  - Cairns
+---
+
+<p>Heute ist unser freier Tag. Zwischen schnorcheln gestern und dem Nationalpark morgen haben wir heute keine Tour. Die Zeit wird genutzt indem wir die Weiterreise buchen. So ist der Plan:</p>  <p>   <table border="0" cellspacing="0" cellpadding="2" width="600"><tbody>       <tr>         <td valign="top" width="94">29.09.</td>          <td valign="top" width="506">Flug Cairns – Alice Springs</td>       </tr>        <tr>         <td valign="top" width="94">30.09. – 02.10.</td>          <td valign="top" width="506">The Rock Tour (3 Tage im Red Center)</td>       </tr>        <tr>         <td valign="top" width="94">03.10.</td>          <td valign="top" width="506">Flug Alice Springs – Perth – Singapur – Phuket</td>       </tr>        <tr>         <td valign="top" width="94">25.10.</td>          <td valign="top" width="506">Flug Bangkok – Berlin - Wien</td>       </tr>     </tbody></table> </p>  <p>In Thailand gibts leider wieder so eine dumme Regelung, daß man bei der Einreise schon das Ausreiseticket haben muß. Das wird zwar laut anderen Reisenden nicht überprüft, aber die Botschaft bestätigt das auch und somit könnten wir ein Problem bei der Einreise kriegen wenn wir das Ticket nicht haben. Da der Flug Bangkok – Berlin – Wien weniger kostet als Cairns – Alice Springs, geht sich das auch mit der Kreditkarte noch aus. In Thailand darf man ohne Visum 30 Tage bleiben. Wir haben uns auf 3 Wochen beschränkt und fliegen danach nach Hause weil wir schon jetzt über dem Budget sind, das wir uns vorgenommen haben. Neuseeland und Australien sind einfach viel zu teuer. In Asien wären wir wahrscheinlich ein halbes Jahr damit ausgekommen.</p>  <p>Nachdem die organisatorischen Dinge erledigt sind (man glaubt gar nicht, wie viel Zeit dabei draufgeht) gehen wir Souvenirs kaufen. Wir gehen in so ziemlich jeden Laden, den es in Cairns gibt bis ich ein Veto einlege. Anschließend gehts kurz nach Hause und wir sortieren unsere Sachen. Die Dinge, die wir nicht mehr brauchen wandern gemeinsam mit den Souvenirs in meinen kleinen Rucksack und dann schleppen wir das zur Post und schicken es nach Hause. Bergschuhe, Reiseführer, Souvenirs und dicke Pullis werden in eine Box gestopft. Der Postbeamte verklebt sie noch ganz gut mit Klebeband damit das nicht aufplatzt und ab gehts auf die Waage. Wir müssen zukünftig 8,5 kg weniger mitschleppen (dafür hab ich mir heute wieder 2 neue Bücher gekauft). Wir können das entweder mit der Luftpost schicken – das ist in einer Woche in Österreich und kostet $216 – oder mit dem Schiff – das dauert 10-12 Wochen und kostet $99. Wir entscheiden uns für das Schiff.</p>
