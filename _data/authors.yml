@@ -2,6 +2,7 @@ Vero:
   name        : "Vero Rumpler"
   # bio         : "What do you want, jewels? I am a very extravagant man."
   avatar      : "/assets/images/Vero.png"
+  youtube     : VeroAufReisen
   # links:
   #   - label: "Email"
   #     icon: "fas fa-fw fa-envelope-square"
@@ -17,10 +18,11 @@ Michael:
   name        : "Michael Rumpler"
   # bio         : "I ordered what?"
   avatar      : "/assets/images/Michael.jpg"
-  links:
-    # - label: "Email"
-    #   icon: "fas fa-fw fa-envelope-square"
-    #   url: "mailto:cornelius@thewhip.com"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/MRumpler"
+  twitter     : "MRumpler"
+  # links:
+  #   - label: "Email"
+  #     icon: "fas fa-fw fa-envelope-square"
+  #     url: "mailto:cornelius@thewhip.com"
+  #   - label: "Twitter"
+  #     icon: "fab fa-fw fa-twitter-square"
+  #     url: "https://twitter.com/MRumpler"
