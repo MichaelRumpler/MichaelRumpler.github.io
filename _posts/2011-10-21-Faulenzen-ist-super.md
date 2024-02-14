@@ -6,7 +6,6 @@ comments_locked: true
 classes: wide
 categories:
   - Reiseblog
-  - NZ/AU/TH-2011
   - Thailand
 tags:
   - Motorrad
