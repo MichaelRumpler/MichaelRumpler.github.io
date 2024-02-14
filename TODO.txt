@@ -2,5 +2,5 @@
 TODO Blog:
 
 Reiseblog:
-- migrate old data
 - maps in sidebar
+- split reiseblog from normal Blog
