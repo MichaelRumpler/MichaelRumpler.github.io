@@ -4,3 +4,4 @@ TODO Blog:
 Reiseblog:
 - maps in sidebar
 - split reiseblog from normal Blog
+- change categories to countries and add a country-cloud
