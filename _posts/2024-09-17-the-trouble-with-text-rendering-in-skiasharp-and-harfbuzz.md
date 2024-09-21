@@ -220,7 +220,7 @@ Text shaping is primarily needed to render Indic, Arabic, Thai or Hebrew text. B
 
 HarfBuzz is one of those little libraries which nobody knows, but is [used everywhere](https://github.com/harfbuzz/harfbuzz). E.g. in Android, Chrome, Firefox, Microsoft Edge, GNOME, LibreOffice, OpenJDK, Adobe Photoshop, Illustrator, Godot Engine, Unreal Engine, and many others.
 
-![Text samples with Skia and HarfBuzz](/assets/images/TextRendering.png)
+![Text samples with Skia and HarfBuzz](/assets/images/SkiaAndHarfBuzz.png)
 
 The black cat consist of multiple code points. A normal cat, a Zero Width Joiner and finally the color.
 Skia renders all of them separately. Only HarfBuzz combines them into one element.
