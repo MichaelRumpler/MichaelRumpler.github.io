@@ -81,7 +81,7 @@ $light-gray: mix(#fff, $gray, 50%) !default;
 $lighter-gray: mix(#fff, $gray, 90%) !default;
 
 $background-color: #fff !default;
-$code-background-color: #fafafa !default;
+$code-background-color: #cccccc !default;
 $code-background-color-dark: $light-gray !default;
 $text-color: $dark-gray !default;
 $muted-text-color: mix(#fff, $text-color, 20%) !default;
@@ -158,13 +158,29 @@ $base0f: #ff5370 !default;
 /*
    Breakpoints
    ========================================================================== */
-
+/*
 $small: 600px !default;
 $medium: 768px !default;
 $medium-wide: 900px !default;
 $large: 1024px !default;
 $x-large: 1280px !default;
+$max-width: $x-large !default;  */
+
+$small: 600px !default;
+$medium: 768px !default;
+$medium-wide: 1024px !default;
+$large: 1200px !default;
+$x-large: 1600px !default;
 $max-width: $x-large !default;
+
+/*
+$small: 768px !default;
+$medium: 1024px !default;
+$medium-wide: 1200px !default;
+$large: 1600px !default;
+$x-large: 1920px !default;
+$max-width: $x-large !default;
+*/
 
 /*
    Grid
