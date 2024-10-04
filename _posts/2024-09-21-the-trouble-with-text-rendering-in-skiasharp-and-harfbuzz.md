@@ -1,6 +1,6 @@
 ---
 title: The Trouble with Text Rendering in SkiaSharp and HarfBuzz
-date: 2024-09-17
+date: 2024-09-21
 toc: true
 toc_sticky: true
 header:
@@ -280,8 +280,11 @@ So it is worth thinking about what you want to render. Is it only ASCII characte
 
 If you need to render non-latin languages, emojis or use font ligatures, then you definitely need HarfBuzzSharp.
 
+**Update:**
+In the next post you can read about [Performance Tuning DrawShapedText](/performance-tuning-drawshapedtext).
+
 ## Sample code
 
 I wrote a very simple AvaloniaUI app where you can enter some text and it is rendered with SkiaSharp and HarfBuzz. There you can easily see what works in SkiaSharp and what doesn't.
 
-You can find it on [GitHub](https://github.com/MichaelRumpler/SkiaTextRendering). The text rendering code is in [TextInfo.cs](https://github.com/MichaelRumpler/SkiaTextRendering/blob/main/Views/TextInfo.cs).
+You can find it on [GitHub](https://github.com/MichaelRumpler/SkiaTextRendering). The text rendering code is in [TextInfo.cs](https://github.com/MichaelRumpler/SkiaTextRendering/blob/main/SkiaTextRendering/Views/TextInfo.cs).
