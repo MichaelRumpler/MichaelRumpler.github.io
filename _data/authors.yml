@@ -18,6 +18,7 @@ Michael:
   name        : "Michael Rumpler"
   # bio         : "I ordered what?"
   avatar      : "/assets/images/Michael.jpg"
+  bluesky     : "mrumpler.at"
   twitter     : "MRumpler"
   # links:
   #   - label: "Email"

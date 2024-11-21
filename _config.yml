@@ -102,6 +102,9 @@ author:
   location         : "Leobersdorf, Austria"
   email            : # "michael@mrumpler.at"
   links:
+    - label: "Bluesky"
+      icon: "fab fa-fw fa-bluesky"
+      url: "https://bsky.app/profile/mrumpler.at"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/MRumpler"
@@ -112,6 +115,9 @@ author:
 # Site Footer
 footer:
   links:
+    - label: "Bluesky"
+      icon: "fab fa-fw fa-bluesky"
+      url: "https://bsky.app/profile/mrumpler.at"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/MRumpler"
