@@ -3,7 +3,7 @@ title: About me
 permalink: /about/
 ---
 
-Hi, I'm Michael and I'm a software developer.
+Hi, I'm Michael and I'm a freelance software developer.
 
 I live with my wife and cat in a small town south of Vienna, Austria.
 I love to play Squash and Badminton, traveling and hiking.
