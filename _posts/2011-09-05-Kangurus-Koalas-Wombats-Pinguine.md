@@ -6,14 +6,9 @@ comments_locked: true
 classes: wide
 categories:
   - Reiseblog
-  - Australien
+  - NZ-AU-TH
 tags:
-  - Wombats
-  - Pinguine
-  - Kängurus
-  - Koalas
-  - Philip Island
-  - Melbourne
+  - Australien
 ---
 
 <p>Den Sonntagvormittag haben wir mit Allt&auml;glichem verbracht: W&auml;sche waschen, lesen etc. Leider hat der Trockner nicht richtig funktioniert:</p>

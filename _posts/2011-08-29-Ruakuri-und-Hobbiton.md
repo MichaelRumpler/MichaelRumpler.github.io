@@ -6,11 +6,9 @@ comments_locked: true
 classes: wide
 categories:
   - Reiseblog
-  - Neuseeland
+  - NZ-AU-TH
 tags:
-  - Hobbiton
-  - Ruakuri
-  - Waitomo Caves
+  - Neuseeland
 ---
 
 <p>Heute hat der Tag schon au&szlig;ergew&ouml;hnlich zeitig begonnen: um Mitternacht. Zumindest f&uuml;r Michi. Michi hat sich den Wecker gestellt, um die Formel 1 &Uuml;bertragung live sehen zu k&ouml;nnen, w&auml;hrend ich friedlich neben ihm geschlafen hab.</p>

@@ -6,11 +6,9 @@ comments_locked: true
 classes: wide
 categories:
   - Reiseblog
-  - Australien
+  - NZ-AU-TH
 tags:
-  - Seekajak
-  - Wale
-  - Byron Bay
+  - Australien
 ---
 
 <p>Heute gings mit dem Seekajak raus aufs Meer. Michi und ich bekommen ein Boot f&uuml;r zwei. Insgesamt war es nur eine kleine Gruppe &ndash; von 6 Leuten inkl. Guide. Wir haben die Instruktionen unseres Guides, Sam, zu Beginn der Tour bel&auml;chelt. Immerhin haben wir schon mehrere Wochen Wildwasserpaddeln hinter uns. Wie man ein Paddel h&auml;lt, das wissen wir ja schon l&auml;ngst. Au&szlig;erdem hat uns Sam verraten, &ldquo;Austrians are naturally born kajakers&rdquo;. Na dann kann ja nix schief gehen.</p>

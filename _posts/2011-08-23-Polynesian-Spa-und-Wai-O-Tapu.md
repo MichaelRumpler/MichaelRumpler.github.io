@@ -6,12 +6,9 @@ comments_locked: true
 classes: wide
 categories:
   - Reiseblog
-  - Neuseeland
+  - NZ-AU-TH
 tags:
-  - Rotorua
-  - Polynesian Spa
-  - Wai-O-Tapu
-  - Geysier
+  - Neuseeland
 ---
 
 <p>In diesem Motel ist leider kein Fr&uuml;hst&uuml;ck dabei. Wir haben uns gestern Fr&uuml;chte gekauft und unser Fr&uuml;hst&uuml;ck ist daher seeehr gesund.</p>

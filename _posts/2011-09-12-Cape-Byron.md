@@ -6,10 +6,9 @@ comments_locked: true
 classes: wide
 categories:
   - Reiseblog
-  - Australien
+  - NZ-AU-TH
 tags:
-  - Cape Byron
-  - Byron Bay
+  - Australien
 ---
 
 <p>Heut wollte Michi den Tag am Strand rumliegen, und ich wollte etwas unternehmen. Als Kompromiss haben wir nicht viel unternommen, und sind auf den Leuchtturm, Cape Byron, gewandert.</p>

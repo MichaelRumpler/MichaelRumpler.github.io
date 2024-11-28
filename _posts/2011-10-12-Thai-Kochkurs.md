@@ -6,9 +6,9 @@ comments_locked: true
 classes: wide
 categories:
   - Reiseblog
-  - Thailand
+  - NZ-AU-TH
 tags:
-  - Koh Lanta
+  - Thailand
 ---
 
 Wir stehen jeden Tag früher auf. Heute werden wir schon um 8:00 Uhr abgeholt und machen einen Kochkurs. Es gibt diese Kurse zwar am Nachmittag und Abend auch, aber da wird was anderes gekocht und ich will ein Panang Curry dabei haben.

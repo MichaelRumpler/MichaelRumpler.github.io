@@ -7,6 +7,8 @@ classes: wide
 categories:
   - Reiseblog
   - Laos
+tags:
+  - Laos
 ---
 
 Am nächsten Morgen werden wir zeitig in der Früh abgeholt - um 08:30 gehts los. Zuerst wird ein Fahrrad ausgeborgt. Nachdem ich gesehen habe, was hier alles auf den Straßen rumkurvt, bin ich überrascht, als wir sehr moderne, gut ausgestattete Mountain-Bikes bekommen. Nachdem ich über die ersten Schlaglöcher gefahren bin, verstehe ich warum wir mitten in der Stadt Mountain Bikes brauchen. Zuerst sind wir rauf auf einen kleinen Hügel mit Tempel geradelt um einen Überblick über die Stadt zu erhalten.

@@ -6,9 +6,9 @@ comments_locked: true
 classes: wide
 categories:
   - Reiseblog
-  - Neuseeland
+  - NZ-AU-TH
 tags:
-  - Russell
+  - Neuseeland
 ---
 
 <p>Letzte Nacht war es endlich einigerma&szlig;en ruhig. Die M&auml;dels sind nicht ausgegangen. Die Jungs haben zwar wieder ab ca. 3:00 Uhr gequatscht, aber Vero hats nicht mitgekriegt und ich war um die Zeit sowieso schon munter weil wir eben schon um 20:15 Uhr schlafen gegangen sind.</p>

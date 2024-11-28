@@ -6,12 +6,9 @@ comments_locked: true
 classes: wide
 categories:
   - Reiseblog
-  - Neuseeland
+  - NZ-AU-TH
 tags:
-  - Tongariro
-  - Whakapapa
-  - Skifahren
-  - Rugby
+  - Neuseeland
 ---
 
 <p>Unser Timing war wieder mal so schlecht es nur geht. Heute sind wir Skifahren und es ist 1. Samstag und die ganzen Neuseel&auml;nder hatten die selbe Idee und 2. ist das Wetter so schlecht wie es hier in Neuseeland noch nicht war seitdem wir hier sind.</p>

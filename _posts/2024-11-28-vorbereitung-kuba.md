@@ -7,7 +7,7 @@ header:
   image: /assets/images/2024/12/Kuba_big.png
 categories:
   - Reiseblog
-  - Kuba 2024
+  - Kuba
 tags:
   - Kuba
 ---

@@ -6,9 +6,9 @@ comments_locked: true
 classes: wide
 categories:
   - Reiseblog
-  - Australien
+  - NZ-AU-TH
 tags:
-  - Byron Bay
+  - Australien
 ---
 
 <p>Heute gibts gar nicht so viel zu erz&auml;hlen. Wir haben in einem Pancake Shop gefr&uuml;hst&uuml;ckt und sind dann den Strand entlang geschlendert, einen kleinen Flu&szlig; (voller Einkaufswagerln) entlang bis zur Busstation. Dann hab ich noch eine Runde durch Port Macquarie gedreht auf der Suche nach einem Lebensmittelgesch&auml;ft. Die haben sie aber in der Touristenstadt recht gut versteckt. Ich hab aber schlie&szlig;lich doch noch eins gefunden und Essen f&uuml;r unterwegs gekauft.</p>

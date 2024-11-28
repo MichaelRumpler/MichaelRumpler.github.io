@@ -6,9 +6,9 @@ comments_locked: true
 classes: wide
 categories:
   - Reiseblog
-  - Neuseeland
+  - NZ-AU-TH
 tags:
-  - Auckland
+  - Neuseeland
 ---
 
 <p>Puh, lang hat&rsquo;s gedauert, aber jetzt sind wir da. Nach ca. 29 Stunden Reisezeit hat uns ein sonniges, nicht allzu kaltes Auckland empfangen. (in der Reisezeit inkludiert sind 4 Stunden Wartezeit in London und Hong Kong, 4 Security Checks &ndash; mit 4 unterschiedlichen Ergebnissen.) Die 25 Stunden im Flugzeug waren nicht so langweilig wie bef&uuml;rchtet. Jeder hatte seinen eigene kleine Entertainmentstation: mit ca. 70 Kinofilmen, viel Musik, Spielen, H&ouml;rb&uuml;cher, Fernsehfilme etc.).&nbsp;</p>

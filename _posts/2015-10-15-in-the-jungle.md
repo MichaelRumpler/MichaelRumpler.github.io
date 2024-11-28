@@ -7,6 +7,8 @@ classes: wide
 categories:
   - Reiseblog
   - Laos
+tags:
+  - Laos
 ---
 
 <p>Bei der Gibbon Experience gibt es drei verschiedene Varianten:</p>

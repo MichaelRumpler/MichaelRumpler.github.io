@@ -6,10 +6,9 @@ comments_locked: true
 classes: wide
 categories:
   - Reiseblog
-  - Thailand
+  - NZ-AU-TH
 tags:
-  - Phi Phi Island
-  - Koh Lanta
+  - Thailand
 ---
 
 Unsere Fähre nach Koh Lanta geht um 11:30 Uhr. Da haben wir davor noch etwas Zeit um in einem Restaurant mit Gratis-WLAN die Blog-Einträge der letzten paar Tage zu veröffentlichen. Im Hotel gabs leider kein Internet.

@@ -6,14 +6,9 @@ comments_locked: true
 classes: wide
 categories:
   - Reiseblog
-  - Australien
+  - NZ-AU-TH
 tags:
-  - Melbourne
-  - Sydney
-  - Melbourne
-  - Tiger Airways
-  - Sydney
-  - Tiger Airways
+  - Australien
 ---
 
 <p>Nach dem Fr&uuml;hst&uuml;ck m&uuml;ssen wir erst mal unsere ganze W&auml;sche die noch zum Trocknen im Zimmer h&auml;ngt zusammenklauben und wieder in die Rucks&auml;cke stopfen. Das dauert eine Weile und so kommen wir erst gegen 10 Uhr aus dem Hotel raus. Wir fahren nach Southern Cross und schmei&szlig;en die Rucks&auml;cke dort in ein Schlie&szlig;fach. Gezahlt wird f&uuml;r 24h, brauchen tun wirs f&uuml;r 3 weil um 13:30 Uhr sollten wir schon zum Flughafen aufbrechen.</p>

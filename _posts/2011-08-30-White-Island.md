@@ -6,10 +6,9 @@ comments_locked: true
 classes: wide
 categories:
   - Reiseblog
-  - Neuseeland
+  - NZ-AU-TH
 tags:
-  - White Island
-  - Whakatane
+  - Neuseeland
 ---
 
 <p>Gestern haben wir uns f&uuml;r eine Tour nach White Island angemeldet. Das ist der aktivste Vulkan auf Neuseeland ca. 50km vor der K&uuml;ste auf einer kleinen Insel. Leider finden diese Touren nicht bei jedem Wetter statt. Wenn bei der Insel zu starker Seegang ist, kann man nicht anlegen und wenn es regnet, dann nimmt der Regen die aufsteigenden Gase aus dem Vulkan wieder mit runter auf die Insel und die Tour findet auch nicht statt. Gestern um 19:00 Uhr hat der Veranstalter uns angerufen und gemeint, sie wissen es noch nicht, sie melden sich um 8 Uhr fr&uuml;h. Dann hats die ganze Nacht durchgeregnet. Wir haben uns schon mit einem Tag schlafen, lesen und W&auml;sche waschen angefreundet und um 8:15 Uhr haben sie dann doch nochmal angerufen und gesagt, dass die Tour stattfindet.</p>

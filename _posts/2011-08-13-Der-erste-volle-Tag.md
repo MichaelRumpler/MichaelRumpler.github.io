@@ -6,10 +6,9 @@ comments_locked: true
 classes: wide
 categories:
   - Reiseblog
-  - Neuseeland
+  - NZ-AU-TH
 tags:
-  - Auckland
-  - Skyline
+  - Neuseeland
 ---
 
 <p>Nachdem unsere Nachbarn bis ca. 01:00 ihre Party feierten, sind wir endlich eingeschlafen. Ruhig schlummerten wir vor uns hin, bis ca. 4:30 &ndash; dann haben die Nachbarn im anderen Nebenzimmer ihre Eltern angerufen, und das ziemlich lautstark.</p>

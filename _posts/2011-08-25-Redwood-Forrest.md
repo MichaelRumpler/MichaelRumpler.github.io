@@ -6,9 +6,9 @@ comments_locked: true
 classes: wide
 categories:
   - Reiseblog
-  - Neuseeland
+  - NZ-AU-TH
 tags:
-  - Rotorua
+  - Neuseeland
 ---
 
 <p>Heute waren wir recht faul. Wir waren nur im Redwood Forrest gleich neben dem Lake Rotorua und sind dort 2,5 Stunden spazieren gegangen.</p>

@@ -6,14 +6,9 @@ comments_locked: true
 classes: wide
 categories:
   - Reiseblog
-  - Neuseeland
+  - NZ-AU-TH
 tags:
-  - Whakatane
-  - Hahei
-  - Cathedral Cove
-  - Church Accomodation
-  - Coromandel
-  - Whitianga
+  - Neuseeland
 ---
 
 <p>Nach einer ziemlich langen Fahrt sind wir gestern in Hahei gelandet. In Hahei ist ein kleines verschlafenes Nest auf der Coromandel Halbinsel. Trotzdem hat es einige &Uuml;berraschungen f&uuml;r uns bereit gehalten:</p>

@@ -6,12 +6,9 @@ comments_locked: true
 classes: wide
 categories:
   - Reiseblog
-  - Australien
+  - NZ-AU-TH
 tags:
-  - Whitsunday Islands
-  - Airlie Beach
-  - Schnorcheln
-  - Beach
+  - Australien
 ---
 
 <p>Am Abend haben wir uns mit den anderen Passagieren angefreundet, und noch ein paar neue Kartenspiele gelernt.</p>

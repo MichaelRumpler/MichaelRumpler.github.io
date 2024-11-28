@@ -6,10 +6,9 @@ comments_locked: true
 classes: wide
 categories:
   - Reiseblog
-  - Neuseeland
+  - NZ-AU-TH
 tags:
-  - Cape Reinga
-  - Northland
+  - Neuseeland
 ---
 
 <p>Zum Fr&uuml;hst&uuml;ck gehts wieder ins Waterfront Cafe. Da war das Essen gestern so gut, die haben damit zwei neue Stammkunden gewonnen. Naja so lang wir halt da sind.</p>

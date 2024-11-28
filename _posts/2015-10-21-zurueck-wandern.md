@@ -7,6 +7,8 @@ classes: wide
 categories:
   - Reiseblog
   - Laos
+tags:
+  - Laos
 ---
 
 Nach der Nacht in dem wohl ärmsten Dorf von Laos (oder zumindest hoffe ich, dass es nicht noch ärmere gibt) packt Vero in der Früh ihre Sachen. Der Bub war dabei sehr interessiert.

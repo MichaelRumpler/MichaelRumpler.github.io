@@ -6,11 +6,9 @@ comments_locked: true
 classes: wide
 categories:
   - Reiseblog
-  - Australien
+  - NZ-AU-TH
 tags:
-  - Hervey Bay
-  - Strand
-  - durchsichtige Knackwürstel.
+  - Australien
 ---
 
 <p>Heute haben wir Hervey Bay erkundet. Eigentlich wollten wir ja den Ort nur zur Durchreise benutzen, denn in unsere Reisef&uuml;hrer war nicht viel &uuml;ber den Ort zu finden. Also machen wir uns in der Fr&uuml;h &ndash; ohne Fr&uuml;hst&uuml;ck &ndash; zu Fu&szlig; auf den Weg zum Strand, weil da solls ja einen in Hervey Bay geben.</p>

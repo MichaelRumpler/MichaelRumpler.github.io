@@ -6,6 +6,8 @@ comments_locked: true
 classes: wide
 categories:
   - Reiseblog
+  - NZ-AU-TH
+tags:
   - Australien
 ---
 

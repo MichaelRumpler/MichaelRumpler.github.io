@@ -7,6 +7,8 @@ classes: wide
 categories:
   - Reiseblog
   - Laos
+tags:
+  - Laos
 ---
 
 <p>In der Früh machen wir uns auf um den Morgenmarkt zu besichtigen. Hier entdeckt man allerhand, was es bei uns so nicht gibt.</p> <p><a href="/assets/images/2015/10/DSC_0989.jpg"><img src="/assets/images/2015/10/DSC_0989_thumb.jpg" width="201" height="115" alt="DSC_0989" border="0" /></a><a href="/assets/images/2015/10/DSC_0993.jpg"><img src="/assets/images/2015/10/DSC_0993_thumb.jpg" width="201" height="115" alt="DSC_0993" border="0" /></a><a href="/assets/images/2015/10/DSC_0994.jpg"><img src="/assets/images/2015/10/DSC_0994_thumb.jpg" width="201" height="115" alt="DSC_0994" border="0" /></a></p> <p>(Eichhörnchen, Vögel, Grillen, Fledermäuse, Schnecken, Kröten, Aale,&hellip;)</p> <p>Wie unser Guide schon ein paar mal gesagt hat: &raquo;our people eat everything&laquo;. (sogar die letzten Tiger)</p> <p>Danach gehts weiter ins TAEC - Museum. Hier wird man über die unterschiedlichen Ethnien (ca. 49 Stück) in Laos aufgeklärt. Über Schamanen bis zu Hochzeitsgewand. </p> <p><a href="/assets/images/2015/10/DSC_0999.jpg"><img src="/assets/images/2015/10/DSC_0999_thumb.jpg" width="274" height="484" alt="DSC_0999" border="0" /></a></p>

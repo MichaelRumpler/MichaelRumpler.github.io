@@ -1,11 +1,13 @@
 ---
 title: Neuseeland – was haben wir gelernt
 author: Vero
-date: 2011-08-26
+date: 2011-09-02
 comments_locked: true
 classes: wide
 categories:
   - Reiseblog
+  - NZ-AU-TH
+tags:
   - Neuseeland
 ---
 

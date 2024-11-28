@@ -6,11 +6,9 @@ comments_locked: true
 classes: wide
 categories:
   - Reiseblog
-  - Neuseeland
+  - NZ-AU-TH
 tags:
-  - Auckland
-  - Rotorua
-  - Neuseeland.
+  - Neuseeland
 ---
 
 <p>Nachdem wir in Auckland &uuml;bernachtet haben, sind wir in der Fr&uuml;h (vor dem Fr&uuml;hst&uuml;ck!) zum Mt. Eden gefahren (das letzte St&uuml;ckerl sind wir dann gegangen.) Mt. Eden ist der gr&ouml;&szlig;te Vulkanberg und man hat einen netten Blick &uuml;ber ganz Auckland.</p>

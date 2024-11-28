@@ -7,6 +7,8 @@ classes: wide
 categories:
   - Reiseblog
   - Laos
+tags:
+  - Laos
 ---
 
 Nach einer recht ruhigen Nacht (keine Gibbons, keine Ratten, keine Gelsen) werden wir in der Früh von unseren Guides geweckt, die uns das Frühstück und heißes Wasser (mittels Zipline) bringen.

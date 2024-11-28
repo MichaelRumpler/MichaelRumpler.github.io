@@ -7,6 +7,8 @@ classes: wide
 categories:
   - Reiseblog
   - Laos
+tags:
+  - Laos
 ---
 
 Im Gegensatz zu den Ratten. Die schlafen nicht alle. Eine sucht auf unserem Baumhaus nach Vorräten. Irgendwann ist es mir zu blöd und ich leuchte mit der Taschenlampe aus unserem Zelt heraus das Baumhaus ab. Das hat sie vertrieben.

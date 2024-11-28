@@ -6,11 +6,9 @@ comments_locked: true
 classes: wide
 categories:
   - Reiseblog
-  - Thailand
+  - NZ-AU-TH
 tags:
-  - Railay
-  - Krabi
-  - Klettern
+  - Thailand
 ---
 
 In der Nacht werden wir einige Male munter, wieder turnt was auf unserem Dach herum. Es klingt aber diesmal nicht wie die Affen auf Koh Lanta, sondern es müssen kleinere Viecher sein. Wir haben schon gehört, dass große Eidechsen manchmal laut um ihr Revier in der Nacht kämpfen.

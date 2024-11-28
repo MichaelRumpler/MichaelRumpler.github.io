@@ -6,12 +6,9 @@ comments_locked: true
 classes: wide
 categories:
   - Reiseblog
-  - Australien
+  - NZ-AU-TH
 tags:
-  - Hervey Bay
-  - Youth Hostel
-  - Brisbane
-  - Matilda
+  - Australien
 ---
 
 <p>In der Fr&uuml;h haben wir noch Zeit f&uuml;r ein ausgiebiges Fr&uuml;hst&uuml;ck und ein paar Fotos von der Dachterrasse unserer Unterkunft.</p>

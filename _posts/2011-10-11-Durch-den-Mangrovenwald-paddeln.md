@@ -6,12 +6,9 @@ comments_locked: true
 classes: wide
 categories:
   - Reiseblog
-  - Thailand
+  - NZ-AU-TH
 tags:
-  - Koh Lanta
-  - Mangroven
-  - Paddeln
-  - Kajak
+  - Thailand
 ---
 
 Heute um 09:00 geht’s zu den Mangroven – Wälder auf Koh Lanta um sie mit dem Kajak zu erforschen. Nach einer kurzen Wartezeit geht es los. Wir haben von Mangroven Wälder natürlich keine Ahnung, und die erste Frage, die sich uns stellt ist: “Gibt’s da Krokodile?”.

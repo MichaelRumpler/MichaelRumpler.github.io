@@ -6,9 +6,9 @@ comments_locked: true
 classes: wide
 categories:
   - Reiseblog
-  - Neuseeland
+  - NZ-AU-TH
 tags:
-  - Auckland
+  - Neuseeland
 ---
 
 <p>Die Nachbarinnen bereiten sich wieder ab ca. 22:00 Uhr aufs Ausgehen vor. Ich w&uuml;rde das &ldquo;Vorgl&uuml;hen&rdquo; nennen, aber in dem Hotel ist ja Alkverbot und ich w&uuml;rde nie jemandem was unterstellen. Um 23:30 Uhr reichts mir und ich geh runter in die Rezeption. Da kommt auch tats&auml;chlich einer mit und sagt denen dass sie leiser sein sollen. Sie sagen: kein Problem,sie gehen ja eh bald aus und drehen zumindest die Musik ab. M&auml;dls k&ouml;nnen halt leider auch ohne Musik laut genug quatschen und das tun sie auch noch eine Stunde bevor sie dann wirklich endlich ausgehen. Ihre R&uuml;ckkehr ein paar Stunden sp&auml;ter verschl&auml;ft Vero. Es dauert zumindest nicht so lang wie vorher.</p>

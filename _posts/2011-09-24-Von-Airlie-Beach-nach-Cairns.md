@@ -6,11 +6,9 @@ comments_locked: true
 classes: wide
 categories:
   - Reiseblog
-  - Australien
+  - NZ-AU-TH
 tags:
-  - Cairns
-  - Airlie Beach
-  - Sailing
+  - Australien
 ---
 
 <p>Wir werden so um 06:30 von der Crew geweckt. Australier sind ja solche Fr&uuml;haufsteher! 😴 Wir k&ouml;nnen noch bis 08:30 Schnorcheln, bevor wir zur&uuml;ck nach Airlie Beach segeln. Aber das Schnorcheln gef&auml;llt uns so gut, dass Michi + ich doch die ersten im Wasser sind.</p>

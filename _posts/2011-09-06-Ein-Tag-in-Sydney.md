@@ -6,9 +6,9 @@ comments_locked: true
 classes: wide
 categories:
   - Reiseblog
-  - Australien
+  - NZ-AU-TH
 tags:
-  - Sydney
+  - Australien
 ---
 
 <p>Heute waren wir ordentliche Touris und haben uns ein Hop-On-Hop-Off Ticket gekauft. Das ist ein Busticket, mit dem man durch die ganze Stadt fahren kann, und bei jeder Sehensw&uuml;rdigkeit, die einem gef&auml;llt, aus dem Bus rausspringt, sich alles anschaut, um dann mit dem n&auml;chsten Bus weiter zu fahren.</p>

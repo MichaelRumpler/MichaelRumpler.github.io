@@ -6,9 +6,9 @@ comments_locked: true
 classes: wide
 categories:
   - Reiseblog
-  - Neuseeland
+  - NZ-AU-TH
 tags:
-  - Glowworm Caves
+  - Neuseeland
 ---
 
 <p>Heut gings von Tongariro nach Glowworm Caves. Der Ort hei&szlig;t wirklich Glow Worm Caves!</p>

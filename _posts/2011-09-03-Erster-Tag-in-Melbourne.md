@@ -6,9 +6,9 @@ comments_locked: true
 classes: wide
 categories:
   - Reiseblog
-  - Australien
+  - NZ-AU-TH
 tags:
-  - Melbourne
+  - Australien
 ---
 
 <p>Ausgeschlafen schaut die Welt &ndash; oder in dem Fall zumindest Melbourne &ndash; gleich viel besser aus. Es gibt ein gutes Fr&uuml;hst&uuml;ck und die Tante von der Rezeption zeigt uns, wie man in die City kommt. 8 Minuten gehen, alle 15-20 Minuten kommt ein Zug und dann f&auml;hrt man ca.15 Minuten bis ins Stadtzentrum. Das ist ja noch ganz gut.</p>

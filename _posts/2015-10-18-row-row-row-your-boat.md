@@ -7,6 +7,8 @@ classes: wide
 categories:
   - Reiseblog
   - Laos
+tags:
+  - Laos
 ---
 
 Heute gehts mit dem Slowboat von Houay Xay nach Pak Beng. Das heißt für uns erst einmal zeitig in der Früh aufstehen, weil das Tuck Tuck uns um 09:30 abholt und wir vorher noch Frühstücken und die Verpflegung für den Tag einkaufen wollen. Das Tuck Tuck kommt auch pünktlich

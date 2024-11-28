@@ -6,10 +6,9 @@ comments_locked: true
 classes: wide
 categories:
   - Reiseblog
-  - Neuseeland
+  - NZ-AU-TH
 tags:
-  - Hahei
-  - Seekajak
+  - Neuseeland
 ---
 
 <p>In Hahei ist der Hot Water Beach.Das ist ein Strand mit hei&szlig;en Quellen direkt beim Meer. Allerdings sind die meisten Quellen nur zur Ebbe &uuml;ber Wasser. Man sollte also zum tiefsten Wasserstand +- 1,5 Stunden dort sein, sich ein Loch in den Sand buddeln und dann ins hei&szlig;e Wasser legen. Je nachdem, wie viel Quellwasser (bis 60&deg;) und Meerwasser man zusammenmischt kann man dann die Temperatur regeln.</p>

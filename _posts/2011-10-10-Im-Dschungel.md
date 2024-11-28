@@ -6,11 +6,9 @@ comments_locked: true
 classes: wide
 categories:
   - Reiseblog
-  - Thailand
+  - NZ-AU-TH
 tags:
-  - Koh Lanta
-  - Elefanten
-  - Dschungel
+  - Thailand
 ---
 
 In der Früh werden wir recht zeitig von einigen Viechern geweckt, die auf unserem Dach herumturnen. Leider reagieren wir nicht schnell genug, um zu sehen, was das denn ist. War eh nicht so schlecht zeitig aufzustehen, weil es gleich nach dem Frühstück in den National Park von Koh Lanta geht.

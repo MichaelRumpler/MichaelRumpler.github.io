@@ -1,15 +1,15 @@
 ---
-title: Stockholm–Rogen/Roa/Femund-Tour–Oslo
+title: Stockholm–Rogen/Röa/Femund-Tour–Oslo
 author: Michael
 date: 2011-07-10
 comments_locked: true
 classes: wide
 categories:
   - Reiseblog
+  - Rogen
+tags:
   - Schweden
   - Norwegen
-tags:
-  - Paddeln
 ---
 
 <h3>Mittwoch, 22. Juni 2011:</h3>
