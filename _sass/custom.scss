@@ -1,3 +1,15 @@
+// div.journey { display: inline-block; width: 300px; padding: 20px; }
+div.journey { float: left; width: 300px; padding: 20px; }
+div.journey h2 { margin: 0.5em; }
+div.journey:hover { background-color: #d0d0d0; cursor: pointer; }
+
+// single.html
+header h1.page__title { float: left; }
+header span.postdate { float: right; }
+
+// archive-single.html
+article.archive__item div.postdate { font-size: .75em; }
+
 /* ==========================================================================
    Comments
    from https://github.com/mmistakes/made-mistakes-jekyll/blob/master/src/assets/stylesheets/_comments.scss
