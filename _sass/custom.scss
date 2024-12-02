@@ -1,3 +1,5 @@
+
+
 // div.journey { display: inline-block; width: 300px; padding: 20px; }
 div.journey { float: left; width: 240px; padding: 20px; margin: 20px; background-color: #d0d0d0; border-radius: 10px; will-change: filter; transition: filter .2s ease-out; }
 div.journey h3 { margin: 0; }
@@ -10,7 +12,7 @@ header span.postdate { float: right; }
 
 // archive-single.html
 article.archive__item div.postdate { font-size: .75em; }
-.page__content article .archive__item-title { margin: 0; font-size: 1em; }
+article.archive__item .archive__item-title { margin: 0; font-size: 1em; }
 
 /* ==========================================================================
    Comments
