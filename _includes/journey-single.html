@@ -1,0 +1,5 @@
+<div class="journey" onclick="location.href='#{{ include.title | slugify | downcase }}'">
+  <h3>{{ include.title }}</h3>
+  <img src="/assets/images/{{ include.image }}.png" alt="{{ include.title }}" width="200" height="200" /><br/>
+  <span class="date">{{ include.date }}</span>
+</div>

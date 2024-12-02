@@ -2,6 +2,7 @@
 TODO Blog:
 
 Reiseblog:
-- maps in sidebar
 - split reiseblog from normal Blog
+- maps in sidebar
 - change categories to countries and add a country-cloud
+- add a CV in english and german
