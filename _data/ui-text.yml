@@ -503,8 +503,8 @@ de: &DEFAULT_DE
   minute_read                : "Minuten zum lesen"
   share_on_label             : "Teilen auf"
   meta_label                 :
-  tags_label                 : "Tags:"
-  categories_label           : "Kategorien:"
+  tags_label                 : "Länder:"
+  categories_label           : "Reise:"
   date_label                 : "Aktualisiert:"
   comments_label             : "Hinterlassen Sie einen Kommentar"
   comments_title             : "Kommentare"

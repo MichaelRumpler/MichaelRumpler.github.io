@@ -1,7 +1,6 @@
 ---
 title: Vorbereitung Kuba
 author: Michael
-date: 2024-11-28
 classes: wide
 header:
   image: /assets/images/2024/12/Kuba_big.png
