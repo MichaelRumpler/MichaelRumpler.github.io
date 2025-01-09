@@ -1,6 +1,7 @@
 ---
 title: San Jose und Regenwald
 author: Vero
+comments_locked: true
 classes: wide
 header:
   image: /assets/images/2018/PuraVida.png

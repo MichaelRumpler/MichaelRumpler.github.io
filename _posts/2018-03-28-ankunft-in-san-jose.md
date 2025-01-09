@@ -2,6 +2,7 @@
 title: Ankunft in San Jose
 author: Michael
 date: 2018-03-28
+comments_locked: true
 classes: wide
 header:
   image: /assets/images/2018/PuraVida.png
