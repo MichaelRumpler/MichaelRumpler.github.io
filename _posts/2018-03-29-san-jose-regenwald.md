@@ -20,6 +20,6 @@ tags:
 {% include figure popup=true image_path="/assets/images/2018/03/IMG-20180329-WA0005.jpg" alt="" caption="" %}
 {% include figure popup=true image_path="/assets/images/2018/03/IMG-20180329-WA0004.jpg" alt="" caption="" %}
 {% include figure popup=true image_path="/assets/images/2018/03/IMG-20180329-WA0003.jpg" alt="" caption="" %}
-{% include figure popup=true image_path="/assets/images/2018/03/IMG-20180329-WA0007.jpg" alt="" caption="Abends dann noch ( ungewollte) live Musik...." %}
+{% include figure popup=true image_path="/assets/images/2018/03/IMG-20180329-WA0007.jpg" alt="" caption="Abends dann noch (ungewollte) live Musik...." %}
 
 {% include figure popup=true image_path="/assets/images/2018/03/IMG-20180329-WA0008.jpg" alt="" caption="So wird das hiesige Steak serviert. Das Fleisch bruzelt noch in der Pfanne und es ist auch doppelt so viel wie bei uns - für ca. €23." %}
