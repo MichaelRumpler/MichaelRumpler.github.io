@@ -21,11 +21,11 @@
   cursor: pointer;
 
   .icon {
-    margin-right: 0.5em;
+    margin-inline-end: 0.5em;
   }
 
   .icon + .hidden {
-    margin-left: -0.5em; /* override for hidden text*/
+    margin-inline-start: -0.5em; /* override for hidden text*/
   }
 
   /* button colors */
@@ -40,7 +40,8 @@
   (facebook, $facebook-color),
   (bluesky, $bluesky-color),
   (twitter, $twitter-color),
-  (linkedin, $linkedin-color);
+  (linkedin, $linkedin-color),
+  (mastodon, $mastodon-color);
 
   @each $buttoncolor, $color in $buttoncolors {
     &--#{$buttoncolor} {

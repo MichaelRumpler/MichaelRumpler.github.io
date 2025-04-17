@@ -1,6 +1,6 @@
 #STEP 1 - generating container with ruby environment
 
-# FROM ruby:2.5
+# FROM ruby:3.3
 
 # WORKDIR /usr/src/app
 
@@ -15,14 +15,14 @@
 #-------------------------------------------------------
 #STEP 2 - install gems from your workdir -> generate Gemfile.lock
 
-#docker run --volume="$PWD:/usr/src/app" -it ruby-environment bundle install
+#docker run --volume="%cd%:/usr/src/app" -it ruby-environment bundle install
 
 
 #-------------------------------------------------------
 #STEP 3
 
 # get base container (in our case it is ruby with version 2.5)
-FROM ruby:2.5
+FROM ruby:3.3
 
 # optional - update initial container
 #RUN gem update --system 
@@ -34,7 +34,7 @@ RUN bundle config --global frozen 1
 WORKDIR /usr/src/app
 
 # copy gemfiles to the working directory
-COPY Gemfile Gemfile.lock minimal-mistakes-jekyll.gemspec ./
+COPY Gemfile Gemfile.lock minimal-mistakes-jekyll.gemspec package.json ./
  
 # optional (if no VOLUME) - copy everything from your local directory into docker WORKDIR 
 # COPY . .
