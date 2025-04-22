@@ -14,6 +14,10 @@ header span.postdate { float: right; }
 article.archive__item div.postdate { font-size: .75em; }
 article.archive__item .archive__item-title { margin: 0; font-size: 1em; }
 
+.page__content p { margin-top: 0.5em; margin-bottom: 0.5em; }
+fieldset { border: 1px solid red; margin-left: 30px; margin-bottom: 0.25em; }
+fieldset.level2 { margin-left: 60px; }
+
 /* ==========================================================================
    Comments
    from https://github.com/mmistakes/made-mistakes-jekyll/blob/master/src/assets/stylesheets/_comments.scss
