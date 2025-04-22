@@ -5,7 +5,7 @@ header:
   image: /assets/images/world.png
 ---
 
-Hier findet ihr Berichte über einige unserer großen Reisen.
+<p data-translate="travelblog_description">{{ site.data.ui-text[site.locale].travelblog_description | default: 'Hier findet ihr Berichte über einige unserer großen Reisen.' }}</p>
 
 ## Aktuell
 

@@ -54,6 +54,7 @@ en: &DEFAULT_EN
   search_algolia_no_results  : "No results"
   results_found              : "Result(s) found"
   back_to_top                : "Back to top"
+  travelblog_description     : "This section is only available in German."
 en-US:
   <<: *DEFAULT_EN
 en-CA:
@@ -537,6 +538,7 @@ de: &DEFAULT_DE
   search_algolia_no_results  :
   results_found              : "Ergebnis(se) gefunden"
   back_to_top                : "Nach oben"
+  travelblog_description     : "Hier findet ihr Berichte über einige unserer großen Reisen."
 de-DE:
   <<: *DEFAULT_DE
 de-AT:
