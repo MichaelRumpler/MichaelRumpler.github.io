@@ -7,15 +7,18 @@ layout: archive
 <h3 class="archive__subtitle" data-translate="recent_posts">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
 
 {% if paginator %}
-  {% assign posts = paginator.posts | where_exp: "post", "post.hidden != true and post.categories and post.categories.size == 0" %}
+  {% assign posts = paginator.posts %}
 {% else %}
-  {% assign posts = site.posts | where_exp: "post", "post.hidden != true and post.categories and post.categories.size == 0" %}
+  {% assign posts = site.posts %}
 {% endif %}
 
 {% assign entries_layout = page.entries_layout | default: 'list' %}
 <div class="entries-{{ entries_layout }}">
   {% for post in posts %}
-    {% include archive-single.html type=entries_layout %}
+    {% if post.hidden == true or post.categories.size > 0 %}
+    {% else %}
+      {% include archive-single.html type=entries_layout %}
+    {% endif %}
   {% endfor %}
 </div>
 
