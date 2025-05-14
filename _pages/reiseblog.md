@@ -7,14 +7,10 @@ header:
 
 <p data-translate="travelblog_description">{{ site.data.ui-text[site.locale].travelblog_description | default: 'Hier findet ihr Berichte über einige unserer großen Reisen.' }}</p>
 
-## Aktuell
-
 {% include journey-single.html title="Kuba" image="kuba" date="2024" %}
-
-## Frühere
-
 {% include journey-single.html title="Costa Rica" image="costarica" date="2018" %}
 {% include journey-single.html title="Laos" image="laos" date="2015" %}
+<br>
 {% include journey-single.html title="Neuseeland, Australien, Thailand" image="nz-au-th" date="2011" %}
 {% include journey-single.html title="Rogen-Röa-Femund" image="rogen" date="2011" %}
 
