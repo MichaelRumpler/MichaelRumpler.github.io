@@ -54,7 +54,7 @@ They both fulfil some of my requirements but cannot move as dynamically as the M
 
 {% include video id="3ab-o7AZ4wE" provider="youtube" %}
 
-They outsourced voice interaction to their own hardware - the WonderEcho. But I couldn't find any more information how it works exactly.
+They outsourced voice interaction to their own hardware - the WonderEcho. I couldn't find any information how it works exactly, but it sounds very natural so my bet is on ElevenLabs.
 
 The [docs](https://docs.hiwonder.com/projects/PuppyPi/en/latest/) look quite good on first sight.
 
@@ -63,7 +63,7 @@ The [docs](https://docs.hiwonder.com/projects/PuppyPi/en/latest/) look quite goo
 - [Mini Cheetah Clone Teardown by Ben Katz, 2022](https://build-its-inprogress.blogspot.com/2022/11/mini-cheetah-clone-teardown.html)
 - [Design of a High Torque Density Modular Actuator for Dynamic Robots by Alexander Hattori, 2020](https://dspace.mit.edu/handle/1721.1/127165)
 - [Low Cost Large 3D printed Quadruped by Nachum Twersky aka. Nachos-printer](https://www.reddit.com/r/BambuLab/comments/1cqfcf2/low_cost_large_3d_printed_quadruped/)
-- [The Dingo | A Low Cost, Open-Source Robot Quadruped by Alexander Calvert and Nathan Ferguson](https://youtu.be/8KntOIgzUjY?si=zr1fESBo0SI49hOZ)
+- [The Dingo - A Low Cost, Open-Source Robot Quadruped by Alexander Calvert and Nathan Ferguson](https://youtu.be/8KntOIgzUjY?si=zr1fESBo0SI49hOZ)
 - [CARA by Aaed Musa](https://www.aaedmusa.com/projects/cara)
 - [Amazon: FREENOVE Robot Dog Kit for Raspberry Pi](https://www.amazon.de/FREENOVE-Raspberry-Balancing-Recognition-Ultrasonic/dp/B08C254F73)
 
@@ -71,13 +71,13 @@ There are also many videos on YouTube about Mini Cheetah Actuators and also read
 
 ### Speak to your robot
 
-All the quadrupeds from above are controlled via computer or remote control. Nobody just tells them what to do. Well, I want to talk with it.
+Most of the quadrupeds from above are controlled via computer or remote control. Nobody just tells them what to do. Well, I want to talk with it.
 
 NetworkChuck did a great video of how to create your own voice assistant without sending all the audio data to the cloud.
 
 {% include video id="XvbVePuP7NY" provider="youtube" %}
 
-He uses a Raspberry Pi with mics and speakers. He already has [Home Assistant](https://www.home-assistant.io/installation/) installed in his home and the [Rhasspi project](https://github.com/rhasspy/wyoming-satellite) integrates nicely with that. He also uses a local notebook for Speech to Text (STT) and Text to Speech (TTS) because his Pi is a bit slow with that.
+He uses a Raspberry Pi with mics and speakers. He already has [Home Assistant](https://www.home-assistant.io/installation/) installed in his home and the [Rhasspi project](https://github.com/rhasspy/wyoming-satellite) strives to integrate voice control into that. He also uses a local notebook for Speech to Text (STT) and Text to Speech (TTS) because his Pi is a bit slow with that.
 
 I want my robot to be as independent as possible. So I don't want to use another local machine with a Home Assistant server or an AI server for STT and TTS. But maybe I can use the other services which Rhasspi uses in the back.
 
